@@ -41,7 +41,10 @@ REPS = [(r"av\. J\.-C\.", "avant Jésus-Christ"), (r"\bSTS-(\d+)", r"S T S \1"),
         (r"\bUS Navy\b", "U S Navy"), (r"\bUS Air Force\b", "U S Air Force"), (r"\bmg\b", "milligrammes"),
         (r"\bkm\b", "kilomètres"), (r"(\d) %", r"\1 pour cent"), (r"«\s*|\s*»", ""), (r"Felis lybica", "Félis libica"),
         (r"Ptolémée V\b", "Ptolémée cinq"), (r"Skłodowska", "Sklodovska"), (r"1/299 792 458", "un, divisé par 299 792 458,"),
-        (r"\b(\d{4})-(\d{4})\b", r"\1 ou \2"), (r"\bUHF\b", "U H F")]
+        (r"\b(\d{4})-(\d{4})\b", r"\1 ou \2"), (r"\bUHF\b", "U H F"),
+        (r"(\d)[  ](\d{3})\b", r"\1\2"), (r"(\d)[  ](\d{3})\b", r"\1\2"),  # « 23 600 » -> « 23600 » (lu comme un seul nombre)
+        (r"\bRFA\b", "R F A"), (r"\bRDA\b", "R D A"), (r"\bUNESCO\b", "Unesco"),
+        (r"François Ier\b", "François premier"), (r"\s?°C\b", " degrés"), (r"≈\s?", "environ ")]
 def say(t):
     t = html.unescape(re.sub(r"<[^>]+>", "", t))
     t = re.sub(r"\b([IVX][IVXL]*|L[IVX]+)(?:e|ème)\b", lambda m: ORD[roman(m.group(1))] if roman(m.group(1)) < len(ORD) else m.group(0), t)

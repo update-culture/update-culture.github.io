@@ -2124,5 +2124,1025 @@
     "dur": 157.2
    }
   }
+ },
+ {
+  "id": "berlin",
+  "date": "2026-11-09",
+  "cat": "Histoire",
+  "img": "berlin.jpg",
+  "commons": "File:West and East Germans at the Brandenburg Gate in 1989.jpg",
+  "cr": "Lear 21 (Wikipédia), CC BY-SA 3.0",
+  "title": "Le mur de Berlin est tombé à cause d'une réponse improvisée en conférence de presse",
+  "lede": "Le 9 novembre 1989, un dirigeant est-allemand annonce par erreur que la frontière s'ouvre « immédiatement ». Quelques heures plus tard, des milliers de Berlinois franchissent le Mur, qui divisait la ville depuis 28 ans.",
+  "cap": "Des Berlinois de l'Est et de l'Ouest sur le Mur, devant la porte de Brandebourg, en 1989.",
+  "body": [
+   [
+    "h",
+    "Une ville coupée en deux"
+   ],
+   [
+    "p",
+    "Après la Seconde Guerre mondiale, l'Allemagne est divisée en deux pays : la RFA à l'ouest et la RDA, communiste, à l'est. Berlin, située en RDA, est elle-même partagée. Des millions d'Allemands de l'Est fuient vers l'Ouest par Berlin. Pour les arrêter, le régime fait construire un mur dans la nuit du 12 au 13 août 1961."
+   ],
+   [
+    "p",
+    "Le Mur encercle Berlin-Ouest sur environ 160 kilomètres. Il mesure 3,60 mètres de haut et compte quelque 300 miradors. Entre 1961 et 1989, au moins 140 personnes y perdent la vie, la plupart abattues en tentant de fuir."
+   ],
+   [
+    "h",
+    "Le 9 novembre 1989, une phrase de trop"
+   ],
+   [
+    "p",
+    "À l'automne 1989, la RDA est secouée par des manifestations géantes. Le gouvernement prépare un assouplissement des voyages vers l'Ouest. Le soir du 9 novembre, Günter Schabowski, porte-parole du régime, présente ces nouvelles règles lors d'une conférence de presse retransmise en direct. Il n'a pas été informé de tous les détails."
+   ],
+   [
+    "p",
+    "Un journaliste lui demande quand la mesure entre en vigueur. Schabowski consulte ses notes et répond, visiblement troublé : « tout de suite, immédiatement ». En réalité, l'ouverture était prévue pour le lendemain, avec des demandes de visa."
+   ],
+   [
+    "h",
+    "La nuit où le Mur s'ouvre"
+   ],
+   [
+    "p",
+    "Les Berlinois de l'Est affluent aussitôt aux postes-frontières. Au poste de Bornholmer Straße, les gardes, débordés et sans ordres, finissent par lever la barrière vers 23 heures. Environ 20 000 personnes passent à l'Ouest en moins d'une heure. Dans la nuit, d'autres postes s'ouvrent à leur tour et des Berlinois montent sur le Mur, devant la porte de Brandebourg. Moins d'un an plus tard, le 3 octobre 1990, l'Allemagne est réunifiée."
+   ]
+  ],
+  "figs": [
+   [
+    "28 ans",
+    "de division, de 1961 à 1989"
+   ],
+   [
+    "160 km",
+    "de mur autour de Berlin-Ouest"
+   ],
+   [
+    "≈ 20 000",
+    "personnes passées en moins d'une heure à Bornholmer Straße"
+   ]
+  ],
+  "keep": [
+   "Le Mur a été construit en août 1961 pour empêcher les fuites vers l'Ouest.",
+   "Une réponse improvisée de Günter Schabowski a déclenché son ouverture le 9 novembre 1989.",
+   "L'Allemagne a été réunifiée le 3 octobre 1990."
+  ],
+  "quiz": [
+   {
+    "q": "Qu'est-ce qui a déclenché l'ouverture du Mur le soir du 9 novembre 1989 ?",
+    "o": [
+     "Un ordre écrit du chef de l'État",
+     "Une réponse improvisée lors d'une conférence de presse",
+     "Une attaque de l'armée de l'Ouest"
+    ],
+    "a": 1,
+    "e": "Günter Schabowski a annoncé en direct que les nouvelles règles s'appliquaient « tout de suite », ce qui a fait affluer les foules aux postes-frontières."
+   },
+   {
+    "q": "En quelle année le Mur de Berlin a-t-il été construit ?",
+    "o": [
+     "1949",
+     "1961",
+     "1975"
+    ],
+    "a": 1,
+    "e": "Il a été construit dans la nuit du 12 au 13 août 1961, pour arrêter les départs massifs vers l'Ouest."
+   },
+   {
+    "q": "Quel poste-frontière a ouvert le premier, vers 23 heures ?",
+    "o": [
+     "Checkpoint Charlie",
+     "Bornholmer Straße",
+     "La porte de Brandebourg"
+    ],
+    "a": 1,
+    "e": "À Bornholmer Straße, les gardes débordés ont levé la barrière. Environ 20 000 personnes sont passées en moins d'une heure."
+   }
+  ],
+  "src": [
+   [
+    "9 novembre 1989 : le mur de Berlin tombe (Hérodote)",
+    "https://www.herodote.net/9_novembre_1989-evenement-19891109.php"
+   ],
+   [
+    "La chute du Mur en 1989 (deutschland.de)",
+    "https://www.deutschland.de/fr/la-chute-du-mur-1989"
+   ],
+   [
+    "8 photos of the fall of the Berlin Wall (Imperial War Museums)",
+    "https://www.iwm.org.uk/history/8-photos-of-the-fall-of-the-berlin-wall"
+   ]
+  ],
+  "audio": {
+   "f": {
+    "starts": [
+     0.0,
+     5.96,
+     19.15,
+     21.53,
+     42.9,
+     60.7,
+     64.95,
+     86.15,
+     101.14,
+     104.0,
+     130.3
+    ],
+    "dur": 147.7
+   },
+   "h": {
+    "starts": [
+     0.0,
+     6.43,
+     20.75,
+     23.27,
+     46.47,
+     65.42,
+     70.5,
+     94.02,
+     110.22,
+     113.09,
+     141.02
+    ],
+    "dur": 160.3
+   }
+  }
+ },
+ {
+  "id": "venus",
+  "date": "2026-11-10",
+  "cat": "Espace",
+  "img": "venus.jpg",
+  "commons": "File:Venus-real color.jpg",
+  "cr": "NASA, Mariner 10 (traitement R. Nunes), domaine public",
+  "title": "Sur Vénus, une journée dure plus longtemps qu'une année",
+  "lede": "Vénus met 243 jours terrestres à tourner sur elle-même, mais seulement 225 jours pour faire le tour du Soleil. Et elle tourne à l'envers : là-bas, le Soleil se lève à l'ouest.",
+  "cap": "Vénus en couleurs proches du réel, d'après des images de la sonde Mariner 10.",
+  "body": [
+   [
+    "h",
+    "Une planète qui tourne au ralenti"
+   ],
+   [
+    "p",
+    "Vénus est la deuxième planète à partir du Soleil, et la plus proche de la Terre. Elle fait presque la même taille que notre planète : environ 95 % de son diamètre. Pourtant, son rythme est très différent."
+   ],
+   [
+    "p",
+    "Pour faire un tour complet sur elle-même, Vénus met environ 243 jours terrestres. Pour faire le tour du Soleil, il lui faut seulement 224,7 jours. Sa rotation dure donc plus longtemps que son année, un cas unique parmi les planètes du système solaire."
+   ],
+   [
+    "h",
+    "Le Soleil se lève à l'ouest"
+   ],
+   [
+    "p",
+    "Autre bizarrerie : Vénus tourne dans le sens inverse de la plupart des planètes. On parle de rotation rétrograde. Vu depuis sa surface, le Soleil se lèverait donc à l'ouest et se coucherait à l'est. Les astronomes pensent qu'un choc géant ou les effets de son atmosphère très épaisse ont pu inverser ou freiner sa rotation, mais la question n'est pas tranchée."
+   ],
+   [
+    "h",
+    "Un enfer sous les nuages"
+   ],
+   [
+    "p",
+    "Vénus est entourée de nuages épais d'acide sulfurique, qui renvoient beaucoup de lumière : c'est pour cela qu'elle brille autant dans le ciel, au point d'être appelée « l'étoile du berger ». Sous ces nuages, l'atmosphère est composée à 97 % de dioxyde de carbone. La pression au sol atteint environ 92 bars, soit à peu près celle que l'on subit à 900 mètres sous la mer."
+   ],
+   [
+    "p",
+    "Cette atmosphère retient la chaleur par un effet de serre extrême. La température moyenne au sol dépasse 460 °C, assez pour faire fondre le plomb. Vénus est ainsi plus chaude que Mercure, pourtant plus proche du Soleil. Les sondes soviétiques Venera, qui s'y sont posées dans les années 1970, ont transmis les premières images de sa surface avant d'être détruites par la chaleur et la pression."
+   ]
+  ],
+  "figs": [
+   [
+    "243 jours",
+    "pour un tour sur elle-même"
+   ],
+   [
+    "224,7 jours",
+    "pour un tour du Soleil"
+   ],
+   [
+    "≈ 460 °C",
+    "de température moyenne au sol"
+   ]
+  ],
+  "keep": [
+   "Sur Vénus, un tour sur soi-même dure plus longtemps qu'un tour du Soleil.",
+   "Vénus tourne à l'envers : le Soleil s'y lève à l'ouest.",
+   "Son atmosphère épaisse en fait la planète la plus chaude du système solaire."
+  ],
+  "quiz": [
+   {
+    "q": "Combien de temps Vénus met-elle à tourner sur elle-même ?",
+    "o": [
+     "24 heures",
+     "Environ 243 jours terrestres",
+     "Environ 10 ans"
+    ],
+    "a": 1,
+    "e": "Environ 243 jours terrestres, alors qu'elle fait le tour du Soleil en 224,7 jours."
+   },
+   {
+    "q": "Pourquoi le Soleil se lève-t-il à l'ouest sur Vénus ?",
+    "o": [
+     "Parce que Vénus tourne dans le sens inverse des autres planètes",
+     "Parce qu'elle est plus proche du Soleil",
+     "Parce que ses nuages reflètent la lumière"
+    ],
+    "a": 0,
+    "e": "Vénus a une rotation rétrograde : elle tourne à l'envers par rapport à la plupart des planètes."
+   },
+   {
+    "q": "Vénus est-elle plus chaude ou plus froide que Mercure ?",
+    "o": [
+     "Plus froide, car plus loin du Soleil",
+     "Plus chaude, à cause de son atmosphère très épaisse",
+     "Exactement aussi chaude"
+    ],
+    "a": 1,
+    "e": "Son atmosphère de dioxyde de carbone et ses nuages retiennent la chaleur : plus de 460 °C en moyenne au sol."
+   }
+  ],
+  "src": [
+   [
+    "Vénus, caractéristiques générales (Encyclopædia Universalis)",
+    "https://www.universalis.fr/encyclopedie/venus-planete/2-caracteristiques-generales/"
+   ],
+   [
+    "Vénus (planète) (Vikidia)",
+    "https://fr.vikidia.org/wiki/V%C3%A9nus_(plan%C3%A8te)"
+   ],
+   [
+    "Vénus, la Terre et Mars (IMCCE, Observatoire de Paris)",
+    "https://promenade.imcce.fr/fr/pages6/717.html"
+   ]
+  ],
+  "audio": {
+   "f": {
+    "starts": [
+     0.0,
+     4.08,
+     16.54,
+     19.51,
+     32.83,
+     49.31,
+     52.06,
+     72.46,
+     75.0,
+     97.61,
+     123.09
+    ],
+    "dur": 137.2
+   },
+   "h": {
+    "starts": [
+     0.0,
+     4.57,
+     16.89,
+     20.37,
+     35.0,
+     52.42,
+     55.33,
+     77.67,
+     80.25,
+     103.75,
+     128.52
+    ],
+    "dur": 144.2
+   }
+  }
+ },
+ {
+  "id": "monopoly",
+  "date": "2026-11-11",
+  "cat": "Économie",
+  "img": "monopoly.jpg",
+  "commons": "File:The Landlord's Game patent (US748626).pdf",
+  "cr": "Brevet américain n° 748 626 (1904), domaine public",
+  "title": "Le Monopoly a été inventé par une femme pour dénoncer… les monopoles",
+  "lede": "Longtemps attribué à Charles Darrow, le Monopoly descend d'un jeu breveté en 1904 par l'Américaine Lizzie Magie. Son but était l'inverse de celui du jeu actuel : montrer combien l'accaparement des terres appauvrit tout le monde.",
+  "cap": "Le plateau du « Landlord's Game », dessin du brevet accordé à Lizzie Magie le 5 janvier 1904.",
+  "body": [
+   [
+    "h",
+    "Un jeu pour faire comprendre une idée"
+   ],
+   [
+    "p",
+    "Elizabeth Magie, dite Lizzie, est une Américaine passionnée par les questions sociales. Elle est convaincue par les idées de l'économiste Henry George. Selon lui, la terre ne devrait pas enrichir ceux qui la possèdent sans rien produire : il propose un impôt unique sur la valeur du sol."
+   ],
+   [
+    "p",
+    "Pour rendre cette idée concrète, Lizzie Magie invente un jeu de plateau : The Landlord's Game, « le jeu du propriétaire ». Elle obtient son brevet en janvier 1904, puis publie le jeu elle-même quelques années plus tard."
+   ],
+   [
+    "h",
+    "Deux façons de jouer"
+   ],
+   [
+    "p",
+    "Le jeu propose deux règles. Avec les règles « Monopolist », chaque joueur cherche à acheter des terrains et à ruiner les autres grâce aux loyers : la partie se termine quand un seul joueur possède tout. Avec les règles « Prosperity », la richesse créée profite à tous les joueurs. Lizzie Magie voulait que l'on compare les deux expériences et que l'on mesure l'injustice de la première."
+   ],
+   [
+    "p",
+    "Le plateau est déjà très proche du Monopoly : un parcours carré de cases à acheter, des loyers à payer aux propriétaires et un salaire touché à chaque tour."
+   ],
+   [
+    "h",
+    "De Lizzie Magie à Parker Brothers"
+   ],
+   [
+    "p",
+    "Pendant près de trente ans, le jeu circule et se transforme, souvent recopié à la main par ceux qui l'apprécient. Au début des années 1930, Charles Darrow en découvre une version, la redessine et la vend sous le nom de Monopoly. En 1935, l'éditeur Parker Brothers le commercialise avec un immense succès, et Darrow devient millionnaire."
+   ],
+   [
+    "p",
+    "Parker Brothers rachète aussi les droits de Lizzie Magie, pour 500 dollars, sans lui verser de pourcentage sur les ventes. Son rôle ne sera vraiment connu du grand public que des décennies plus tard. Ironie de l'histoire : seule la version « Monopolist », celle qu'elle voulait critiquer, a survécu."
+   ]
+  ],
+  "figs": [
+   [
+    "1904",
+    "brevet du Landlord's Game"
+   ],
+   [
+    "2",
+    "jeux de règles : Monopolist et Prosperity"
+   ],
+   [
+    "500 $",
+    "payés à Lizzie Magie pour ses droits"
+   ]
+  ],
+  "keep": [
+   "Le Monopoly descend du Landlord's Game, breveté par Lizzie Magie en 1904.",
+   "Le jeu devait montrer les méfaits de l'accaparement des terres.",
+   "Charles Darrow et Parker Brothers en ont tiré une fortune à partir de 1935."
+  ],
+  "quiz": [
+   {
+    "q": "Qui a inventé le jeu dont descend le Monopoly ?",
+    "o": [
+     "Charles Darrow",
+     "Lizzie Magie",
+     "Henry George"
+    ],
+    "a": 1,
+    "e": "Lizzie Magie a breveté The Landlord's Game en 1904. Charles Darrow n'a vendu sa version qu'au début des années 1930."
+   },
+   {
+    "q": "Quel était le but du jeu de Lizzie Magie ?",
+    "o": [
+     "Apprendre à compter aux enfants",
+     "Montrer les injustices de l'accaparement des terres",
+     "Promouvoir les chemins de fer"
+    ],
+    "a": 1,
+    "e": "Inspirée par Henry George, elle voulait faire comprendre comment la propriété du sol enrichit quelques-uns au détriment des autres."
+   },
+   {
+    "q": "Combien Parker Brothers a-t-il payé Lizzie Magie pour ses droits ?",
+    "o": [
+     "500 dollars",
+     "50 000 dollars",
+     "Un pourcentage sur chaque boîte vendue"
+    ],
+    "a": 0,
+    "e": "500 dollars, sans aucun pourcentage sur les ventes, alors que le Monopoly est devenu un succès mondial."
+   }
+  ],
+  "src": [
+   [
+    "The Woman Who Invented Monopoly (History.com)",
+    "https://www.history.com/news/monopoly-game-inventor-elizabeth-magie"
+   ],
+   [
+    "The story of Monopoly (Europeana)",
+    "https://www.europeana.eu/nl/blog/the-story-of-monopoly-how-charles-stole-lizzies-idea-and-made-his-fortune"
+   ],
+   [
+    "The Landlord's Game (Cavacopedia)",
+    "https://cavac.at/cavacopedia/The%20Landlord%27s%20Game"
+   ]
+  ],
+  "audio": {
+   "f": {
+    "starts": [
+     0.0,
+     4.58,
+     18.07,
+     20.88,
+     37.31,
+     50.87,
+     52.89,
+     74.97,
+     84.69,
+     87.62,
+     109.46,
+     127.08
+    ],
+    "dur": 143.1
+   },
+   "h": {
+    "starts": [
+     0.0,
+     5.42,
+     19.74,
+     23.04,
+     41.91,
+     55.78,
+     58.06,
+     80.54,
+     89.94,
+     93.6,
+     115.32,
+     134.28
+    ],
+    "dur": 151.2
+   }
+  }
+ },
+ {
+  "id": "pieuvre",
+  "date": "2026-11-12",
+  "cat": "Animaux",
+  "img": "pieuvre.jpg",
+  "commons": "File:Octopus vulgaris Merculiano.jpg",
+  "cr": "Comingio Merculiano (1896), domaine public",
+  "title": "La pieuvre a trois cœurs, du sang bleu et des bras qui « pensent »",
+  "lede": "Sous ses airs de mollusque mou, la pieuvre est l'un des animaux les plus étranges et les plus intelligents de la planète. Son corps fonctionne d'une manière très différente du nôtre.",
+  "cap": "Un poulpe commun (Octopus vulgaris), illustration de Comingio Merculiano publiée en 1896.",
+  "body": [
+   [
+    "h",
+    "Trois cœurs pour un seul corps"
+   ],
+   [
+    "p",
+    "La pieuvre, ou poulpe, possède trois cœurs. Deux petits cœurs, dits branchiaux, envoient le sang vers les branchies, où il se charge en oxygène. Le troisième, le cœur principal, fait ensuite circuler ce sang oxygéné dans tout le reste du corps."
+   ],
+   [
+    "h",
+    "Un sang bleu au cuivre"
+   ],
+   [
+    "p",
+    "Notre sang est rouge parce que l'oxygène y est transporté par l'hémoglobine, qui contient du fer. Chez la pieuvre, ce rôle est joué par l'hémocyanine, une molécule qui contient du cuivre : son sang est donc bleu. L'hémocyanine fonctionne bien dans l'eau froide et pauvre en oxygène, mais elle transporte l'oxygène moins efficacement. Ses trois cœurs l'aident à compenser."
+   ],
+   [
+    "h",
+    "Des bras presque autonomes"
+   ],
+   [
+    "p",
+    "La pieuvre compte environ 500 millions de neurones, à peu près autant qu'un chien. Une grande partie se trouve hors du cerveau, dans ses huit bras : chacun possède son propre réseau de cellules nerveuses, capable de commander ses mouvements et ses ventouses sans attendre d'ordre du cerveau."
+   ],
+   [
+    "p",
+    "Les scientifiques ont accumulé les preuves de son intelligence. En Indonésie, des pieuvres ont été filmées en train de transporter des moitiés de noix de coco pour s'en faire un abri : un véritable usage d'outil. En laboratoire, certaines dévissent un couvercle de bocal pour attraper un crabe, ou s'échappent de leur aquarium. Des expériences ont aussi montré qu'elles savent reconnaître des humains différents."
+   ],
+   [
+    "p",
+    "Malgré ces talents, la pieuvre vit peu de temps, souvent un ou deux ans. La femelle meurt généralement peu après l'éclosion de ses œufs, qu'elle a veillés jusqu'au bout."
+   ]
+  ],
+  "figs": [
+   [
+    "3",
+    "cœurs : 2 branchiaux et 1 principal"
+   ],
+   [
+    "≈ 500 M",
+    "de neurones, autant qu'un chien"
+   ],
+   [
+    "8",
+    "bras dotés chacun de leur propre réseau nerveux"
+   ]
+  ],
+  "keep": [
+   "La pieuvre a trois cœurs : deux pour les branchies, un pour le corps.",
+   "Son sang est bleu car il transporte l'oxygène grâce au cuivre.",
+   "Une grande partie de ses neurones se trouve dans ses bras."
+  ],
+  "quiz": [
+   {
+    "q": "Combien de cœurs possède une pieuvre ?",
+    "o": [
+     "Un",
+     "Trois",
+     "Huit, un par bras"
+    ],
+    "a": 1,
+    "e": "Deux cœurs branchiaux envoient le sang vers les branchies, et un cœur principal le distribue dans le corps."
+   },
+   {
+    "q": "Pourquoi le sang de la pieuvre est-il bleu ?",
+    "o": [
+     "Parce qu'il contient du cuivre (hémocyanine)",
+     "Parce qu'il est très froid",
+     "Parce qu'il contient de l'encre"
+    ],
+    "a": 0,
+    "e": "L'hémocyanine, qui transporte l'oxygène, contient du cuivre. Notre hémoglobine, elle, contient du fer et rend le sang rouge."
+   },
+   {
+    "q": "Où se trouve une grande partie des neurones de la pieuvre ?",
+    "o": [
+     "Dans son cerveau uniquement",
+     "Dans ses bras",
+     "Dans ses yeux"
+    ],
+    "a": 1,
+    "e": "Chaque bras possède son propre réseau nerveux, capable de commander ses mouvements de façon presque autonome."
+   }
+  ],
+  "src": [
+   [
+    "10 faits incroyables sur les pieuvres (Greenpeace)",
+    "https://www.greenpeace.org/luxembourg/fr/actualites/18587/10-faits-incroyables-sur-les-pieuvres/"
+   ],
+   [
+    "L'intelligence hors norme de la pieuvre (Futura)",
+    "https://www.futura-sciences.com/planete/actualites/animaux-betes-science-intelligence-hors-norme-pieuvre-87059/"
+   ],
+   [
+    "Pourquoi la pieuvre a-t-elle trois cœurs ? (Daily Geek Show)",
+    "https://dailygeekshow.com/pieuvre-coeur/"
+   ]
+  ],
+  "audio": {
+   "f": {
+    "starts": [
+     0.0,
+     4.66,
+     16.33,
+     18.9,
+     35.04,
+     37.54,
+     59.89,
+     62.39,
+     78.81,
+     102.24,
+     111.89
+    ],
+    "dur": 124.8
+   },
+   "h": {
+    "starts": [
+     0.0,
+     4.96,
+     16.2,
+     18.88,
+     36.05,
+     38.49,
+     61.97,
+     64.56,
+     81.52,
+     106.56,
+     117.54
+    ],
+    "dur": 132.2
+   }
+  }
+ },
+ {
+  "id": "joconde",
+  "date": "2026-11-13",
+  "cat": "Art",
+  "img": "joconde.jpg",
+  "commons": "File:Mona Lisa, by Leonardo da Vinci, from C2RMF retouched.jpg",
+  "cr": "Léonard de Vinci, domaine public",
+  "title": "La Joconde est devenue le tableau le plus célèbre du monde… grâce à un vol",
+  "lede": "En août 1911, un ouvrier italien décroche la Joconde du mur du Louvre et repart avec, cachée sous sa blouse. Pendant plus de deux ans, le monde entier la cherche. Ce vol a fait d'elle une icône.",
+  "cap": "La Joconde (vers 1503-1519), de Léonard de Vinci, conservée au musée du Louvre.",
+  "body": [
+   [
+    "h",
+    "Un vol d'une simplicité déconcertante"
+   ],
+   [
+    "p",
+    "Le lundi 21 août 1911, le Louvre est fermé au public, comme tous les lundis. Vincenzo Peruggia, un vitrier italien qui avait travaillé au musée, s'y est caché la nuit dans une réserve. Au petit matin, il décroche la Joconde, la sort de son cadre et de sa vitre, la dissimule sous sa blouse et quitte le musée sans être inquiété."
+   ],
+   [
+    "p",
+    "Personne ne s'en aperçoit tout de suite. Ce n'est que le lendemain que le peintre Louis Béroud, venu copier le tableau, découvre l'emplacement vide. Un gardien pense d'abord qu'il est parti chez le photographe du musée."
+   ],
+   [
+    "h",
+    "Le monde entier sur l'affaire"
+   ],
+   [
+    "p",
+    "La disparition fait la une des journaux du monde entier. Le poète Guillaume Apollinaire est emprisonné quelques jours, et le peintre Pablo Picasso est interrogé, avant d'être mis hors de cause. Fait étonnant, des foules viennent au musée contempler… le mur vide, et certains y déposent des fleurs. Les cartes postales de la Joconde se vendent comme jamais."
+   ],
+   [
+    "p",
+    "Pendant ce temps, le tableau dort dans une valise, sous le lit de Peruggia, dans sa chambre parisienne."
+   ],
+   [
+    "h",
+    "Retrouvée à Florence"
+   ],
+   [
+    "p",
+    "Fin 1913, un antiquaire de Florence, Alfredo Geri, reçoit une lettre proposant de lui vendre la Joconde. Avec le directeur du musée des Offices, il donne rendez-vous au vendeur, examine le tableau et prévient la police : Peruggia est arrêté. Il affirme avoir voulu rendre à l'Italie une œuvre volée selon lui par Napoléon. En réalité, le tableau était en France depuis Léonard de Vinci lui-même, qui l'avait emporté en s'installant à la cour de François Ier."
+   ],
+   [
+    "p",
+    "Peruggia est condamné à une peine légère, d'environ un an de prison. Après avoir été brièvement exposée en Italie, la Joconde retrouve le Louvre, auréolée d'une célébrité mondiale qu'elle n'a jamais perdue."
+   ]
+  ],
+  "figs": [
+   [
+    "21 août 1911",
+    "le jour du vol"
+   ],
+   [
+    "28 mois",
+    "d'absence, jusqu'à décembre 1913"
+   ],
+   [
+    "1",
+    "valise sous un lit : sa cachette à Paris"
+   ]
+  ],
+  "keep": [
+   "La Joconde a été volée au Louvre le 21 août 1911 par Vincenzo Peruggia.",
+   "Elle a été retrouvée à Florence en décembre 1913.",
+   "L'immense écho du vol a contribué à faire d'elle le tableau le plus célèbre du monde."
+  ],
+  "quiz": [
+   {
+    "q": "Qui a volé la Joconde en 1911 ?",
+    "o": [
+     "Pablo Picasso",
+     "Vincenzo Peruggia, un ancien employé du Louvre",
+     "Guillaume Apollinaire"
+    ],
+    "a": 1,
+    "e": "Vincenzo Peruggia, un vitrier italien qui avait travaillé au musée. Apollinaire et Picasso ont été soupçonnés à tort."
+   },
+   {
+    "q": "Où le tableau a-t-il été retrouvé ?",
+    "o": [
+     "À Londres",
+     "À Florence",
+     "À New York"
+    ],
+    "a": 1,
+    "e": "À Florence, en décembre 1913, quand Peruggia a voulu le vendre à l'antiquaire Alfredo Geri."
+   },
+   {
+    "q": "Pourquoi le vol a-t-il rendu la Joconde si célèbre ?",
+    "o": [
+     "Parce que le tableau a été repeint pendant sa disparition",
+     "Parce que l'affaire a fait la une des journaux du monde entier pendant plus de deux ans",
+     "Parce qu'il a été exposé dans plusieurs pays avant le vol"
+    ],
+    "a": 1,
+    "e": "La disparition, l'enquête et les rumeurs ont fait parler de la Joconde partout : des foules venaient même voir le mur vide."
+   }
+  ],
+  "src": [
+   [
+    "21 août 1911 : vol de la Joconde (Hérodote)",
+    "https://www.herodote.net/21_aout_1911-evenement-19110821.php"
+   ],
+   [
+    "Le vol de la Joconde (Finestre sull'Arte)",
+    "https://www.finestresullarte.info/fr/oeuvres-et-artistes/le-vol-de-la-joconde-quand-vincenzo-peruggia-a-vole-le-celebre-tableau-de-leonard-de-vinci"
+   ],
+   [
+    "La folle histoire du vol de la Joconde (La Libre Belgique)",
+    "https://www.lalibre.be/culture/arts/2018/12/29/la-folle-histoire-du-vol-de-la-joconde-le-tableau-le-plus-connu-du-monde-il-y-a-plus-dun-siecle-IOABR5GS6JFPHLGL5MPQAZLSZI/"
+   ]
+  ],
+  "audio": {
+   "f": {
+    "starts": [
+     0.0,
+     5.38,
+     18.57,
+     21.85,
+     42.5,
+     55.1,
+     57.54,
+     79.04,
+     85.15,
+     87.55,
+     114.99,
+     127.68
+    ],
+    "dur": 142.6
+   },
+   "h": {
+    "starts": [
+     0.0,
+     5.41,
+     19.58,
+     22.86,
+     45.33,
+     59.07,
+     62.13,
+     84.83,
+     91.78,
+     94.33,
+     124.2,
+     137.65
+    ],
+    "dur": 154.6
+   }
+  }
+ },
+ {
+  "id": "baikal",
+  "date": "2026-11-14",
+  "cat": "Géographie",
+  "img": "baikal.jpg",
+  "commons": "File:Circles in Thin Ice, Lake Baikal, Russia.jpg",
+  "cr": "NASA, Station spatiale internationale, domaine public",
+  "title": "Le lac Baïkal contient à lui seul un cinquième de l'eau douce liquide de la planète",
+  "lede": "En Sibérie, le lac Baïkal est le plus profond et le plus ancien lac du monde. Il renferme plus d'eau que les cinq Grands Lacs d'Amérique du Nord réunis.",
+  "cap": "Un cercle sombre dans la glace du sud du lac Baïkal, photographié depuis la Station spatiale internationale.",
+  "body": [
+   [
+    "h",
+    "Un lac hors normes"
+   ],
+   [
+    "p",
+    "Le lac Baïkal se trouve dans le sud de la Sibérie, en Russie, près de la frontière mongole. Il s'étire sur environ 636 kilomètres de long pour 25 à 80 kilomètres de large, en forme de croissant."
+   ],
+   [
+    "p",
+    "Sa profondeur maximale dépasse 1 600 mètres : c'est le lac le plus profond du monde. Il contient environ 23 600 kilomètres cubes d'eau, soit près de 20 % de l'eau douce liquide présente à la surface de la Terre. Plus de 300 rivières l'alimentent, mais une seule en sort : l'Angara."
+   ],
+   [
+    "h",
+    "Le plus vieux lac du monde"
+   ],
+   [
+    "p",
+    "La plupart des lacs disparaissent en quelques dizaines de milliers d'années, comblés par les sédiments. Le Baïkal, lui, existe depuis environ 25 millions d'années. Il occupe une faille qui continue de s'élargir lentement : la croûte terrestre s'y écarte, ce qui explique sa grande profondeur."
+   ],
+   [
+    "h",
+    "Une vie qu'on ne trouve nulle part ailleurs"
+   ],
+   [
+    "p",
+    "Cette longue histoire et cet isolement ont permis l'apparition d'espèces uniques. Plus de 2 500 espèces de plantes et d'animaux y ont été recensées, et la grande majorité des animaux n'existent nulle part ailleurs. La plus célèbre est le nerpa, un petit phoque d'eau douce, alors que les phoques vivent presque tous en mer. On ne sait toujours pas avec certitude comment ses ancêtres sont arrivés jusqu'au cœur de la Sibérie."
+   ],
+   [
+    "p",
+    "En hiver, le lac gèle sur une grande partie de sa surface. Depuis l'espace, les astronautes y observent parfois d'étranges cercles sombres de plusieurs kilomètres, où la glace est plus fine. En 1996, le lac Baïkal a été inscrit au patrimoine mondial de l'UNESCO."
+   ]
+  ],
+  "figs": [
+   [
+    "> 1 600 m",
+    "de profondeur maximale, un record mondial"
+   ],
+   [
+    "≈ 20 %",
+    "de l'eau douce liquide de surface de la planète"
+   ],
+   [
+    "≈ 25 M",
+    "d'années d'existence"
+   ]
+  ],
+  "keep": [
+   "Le Baïkal est le lac le plus profond et le plus ancien du monde.",
+   "Il contient près d'un cinquième de l'eau douce liquide de surface de la planète.",
+   "Il abrite des espèces uniques, comme le nerpa, un phoque d'eau douce."
+  ],
+  "quiz": [
+   {
+    "q": "Quelle part de l'eau douce liquide de surface de la planète le lac Baïkal contient-il ?",
+    "o": [
+     "Environ 2 %",
+     "Environ 20 %",
+     "Environ 50 %"
+    ],
+    "a": 1,
+    "e": "Près de 20 %, soit plus que les cinq Grands Lacs d'Amérique du Nord réunis."
+   },
+   {
+    "q": "Quel animal surprenant vit dans le lac Baïkal ?",
+    "o": [
+     "Un requin d'eau douce",
+     "Un phoque d'eau douce, le nerpa",
+     "Un dauphin d'eau douce"
+    ],
+    "a": 1,
+    "e": "Le nerpa est un petit phoque qui vit en eau douce, alors que presque tous les phoques vivent en mer."
+   },
+   {
+    "q": "Pourquoi le lac Baïkal est-il si profond ?",
+    "o": [
+     "Parce qu'il a été creusé par un météorite",
+     "Parce qu'il occupe une faille où la croûte terrestre s'écarte",
+     "Parce qu'il a été agrandi par un barrage"
+    ],
+    "a": 1,
+    "e": "Il se trouve dans une faille qui s'élargit lentement depuis environ 25 millions d'années."
+   }
+  ],
+  "src": [
+   [
+    "Lake Baikal (New World Encyclopedia)",
+    "https://www.newworldencyclopedia.org/entry/Lake_Baikal"
+   ],
+   [
+    "Lac Baïkal (Vikidia)",
+    "https://fr.vikidia.org/wiki/Lac_Ba%C3%AFkal"
+   ],
+   [
+    "Lac Baïkal, entre science, mythes et phénomènes inexpliqués (Figaro Nautisme)",
+    "https://figaronautisme.meteoconsult.fr/actus-nautisme-escales/2026-01-05/32617-lac-baikal-entre-science-mythes-et-phenomenes-inexpliques"
+   ]
+  ],
+  "audio": {
+   "f": {
+    "starts": [
+     0.0,
+     5.45,
+     15.17,
+     17.68,
+     31.13,
+     48.98,
+     51.4,
+     69.07,
+     71.88,
+     95.86,
+     113.94
+    ],
+    "dur": 127.9
+   },
+   "h": {
+    "starts": [
+     0.0,
+     5.89,
+     16.27,
+     18.73,
+     33.28,
+     53.02,
+     55.5,
+     74.37,
+     77.99,
+     102.95,
+     121.89
+    ],
+    "dur": 137.8
+   }
+  }
+ },
+ {
+  "id": "os",
+  "date": "2026-11-15",
+  "cat": "Corps humain",
+  "img": "os.jpg",
+  "commons": "File:Gray197.png",
+  "cr": "Henry Gray, Anatomy of the Human Body (1918), domaine public",
+  "title": "Un bébé naît avec près de 300 os, un adulte n'en a plus que 206",
+  "lede": "Nous perdons des os en grandissant. Ils ne disparaissent pas : beaucoup se soudent entre eux. C'est ce qui permet au bébé de naître, puis au squelette de devenir solide.",
+  "cap": "Le crâne d'un nouveau-né vu de dessus : les fontanelles, encore souples, séparent les os.",
+  "body": [
+   [
+    "h",
+    "Un squelette en morceaux"
+   ],
+   [
+    "p",
+    "À la naissance, un bébé possède entre 275 et 300 os, selon la façon de les compter. Un adulte n'en a plus que 206. Les os ne disparaissent pas : beaucoup de petits os se soudent pour en former de plus grands."
+   ],
+   [
+    "p",
+    "De plus, une partie du squelette du nouveau-né n'est pas encore de l'os dur, mais du cartilage, un tissu souple. Cette souplesse est utile : elle permet au bébé de passer plus facilement lors de l'accouchement."
+   ],
+   [
+    "h",
+    "Les fontanelles, ces zones molles du crâne"
+   ],
+   [
+    "p",
+    "Le crâne d'un nouveau-né est formé de plusieurs os séparés par des espaces mous, les fontanelles. Elles permettent à la tête de se déformer légèrement pendant la naissance, puis au cerveau de grandir très vite durant les premiers mois. Les fontanelles se referment progressivement au cours de la première ou de la deuxième année."
+   ],
+   [
+    "h",
+    "Une transformation qui dure jusqu'à l'âge adulte"
+   ],
+   [
+    "p",
+    "La formation de l'os, appelée ossification, commence très tôt, vers la huitième semaine de grossesse. Pendant toute l'enfance, des cellules spécialisées remplacent peu à peu le cartilage par de l'os. Les os des membres grandissent grâce à des zones de croissance situées près de leurs extrémités. Quand ces zones se ferment, au début de l'âge adulte, la croissance en taille s'arrête."
+   ],
+   [
+    "p",
+    "Le squelette adulte reste pourtant vivant. Il se renouvelle en permanence : on estime qu'il se reconstruit presque entièrement en une dizaine d'années. Il contient aussi environ 99 % du calcium du corps. Parmi ses 206 os, le plus long est le fémur, dans la cuisse, et le plus petit est l'étrier, un minuscule os de l'oreille. La main, à elle seule, en compte 27."
+   ]
+  ],
+  "figs": [
+   [
+    "≈ 300",
+    "os à la naissance"
+   ],
+   [
+    "206",
+    "os chez l'adulte"
+   ],
+   [
+    "27",
+    "os dans une seule main"
+   ]
+  ],
+  "keep": [
+   "Un bébé naît avec près de 300 os, qui se soudent en grandissant.",
+   "Les fontanelles, zones souples du crâne, se ferment vers 1 ou 2 ans.",
+   "L'adulte compte 206 os, du fémur à l'étrier de l'oreille."
+  ],
+  "quiz": [
+   {
+    "q": "Pourquoi un adulte a-t-il moins d'os qu'un bébé ?",
+    "o": [
+     "Parce que certains os disparaissent avec l'âge",
+     "Parce que beaucoup de petits os se soudent entre eux",
+     "Parce que les os se cassent pendant l'enfance"
+    ],
+    "a": 1,
+    "e": "Les os ne disparaissent pas : beaucoup se soudent pour former des os plus grands."
+   },
+   {
+    "q": "Que sont les fontanelles ?",
+    "o": [
+     "Des zones souples entre les os du crâne du bébé",
+     "Les plus petits os de l'oreille",
+     "Les zones de croissance des jambes"
+    ],
+    "a": 0,
+    "e": "Ce sont des espaces mous entre les os du crâne, qui se referment au cours de la première ou de la deuxième année."
+   },
+   {
+    "q": "Quel est le plus petit os du corps humain ?",
+    "o": [
+     "La phalange du petit doigt",
+     "L'étrier, dans l'oreille",
+     "La rotule"
+    ],
+    "a": 1,
+    "e": "L'étrier, un minuscule os de l'oreille moyenne. Le plus long est le fémur, dans la cuisse."
+   }
+  ],
+  "src": [
+   [
+    "How Many Bones Does a Baby Have? (Cleveland Clinic)",
+    "https://health.clevelandclinic.org/how-many-bones-does-a-baby-have"
+   ],
+   [
+    "How Many Bones Are Babies Born With? (Healthline)",
+    "https://healthline.com/health/how-many-bones-does-a-baby-have"
+   ],
+   [
+    "Gray's Anatomy (1918), illustration du crâne de nouveau-né (Wikimedia Commons)",
+    "https://commons.wikimedia.org/wiki/File:Gray197.png"
+   ]
+  ],
+  "audio": {
+   "f": {
+    "starts": [
+     0.0,
+     5.55,
+     16.3,
+     18.58,
+     33.61,
+     46.35,
+     49.77,
+     67.5,
+     71.31,
+     94.27,
+     117.55
+    ],
+    "dur": 132.5
+   },
+   "h": {
+    "starts": [
+     0.0,
+     5.8,
+     17.28,
+     19.58,
+     34.45,
+     47.23,
+     51.08,
+     69.67,
+     73.57,
+     97.41,
+     123.68
+    ],
+    "dur": 140.3
+   }
+  }
  }
 ]
