@@ -17,6 +17,7 @@ on:
 
 permissions:
   contents: read
+  issues: write
 
 jobs:
   envoyer:
@@ -34,3 +35,4 @@ jobs:
           VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
           FORCE_SEND: ${{ github.event_name == 'workflow_dispatch' && inputs.force }}
           SCHEDULE: ${{ github.event.schedule }}
+          GITHUB_TOKEN: ${{ github.token }}

@@ -1,0 +1,71 @@
+# UpDate — enregistrement automatique de l'audio des fiches.
+# Dès que fiches.json change, les fiches sans audio sont enregistrées (voix féminine et masculine) puis publiées.
+# Lancement manuel possible : Actions › « Audio des fiches » › Run workflow (on peut y forcer certaines fiches).
+name: Audio des fiches
+
+on:
+  push:
+    branches: [main]
+    paths: [fiches.json]
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: "Fiches à réenregistrer (identifiants séparés par des espaces). Vide : seulement celles sans audio."
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: audio
+  cancel-in-progress: false
+
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Trouver les fiches sans audio
+        id: missing
+        env:
+          FORCE_IDS: ${{ inputs.ids }}
+        run: |
+          ids=$(python3 - <<'PY'
+          import json, os
+          force = os.environ.get("FORCE_IDS", "").split()
+          d = json.load(open("fiches.json"))
+          known = {f["id"] for f in d}
+          out = [i for i in force if i in known]
+          for f in d:
+              a = f.get("audio") or {}
+              if f["id"] not in out and not (a.get("f") and a.get("h") and os.path.exists(f'{f["id"]}-f.mp3') and os.path.exists(f'{f["id"]}-h.mp3')):
+                  out.append(f["id"])
+          print(" ".join(out))
+          PY
+          )
+          echo "ids=$ids" >> "$GITHUB_OUTPUT"
+          echo "Fiches à enregistrer : ${ids:-aucune}"
+      - name: Enregistrer l'audio
+        if: steps.missing.outputs.ids != ''
+        run: |
+          command -v ffmpeg >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+          pip install --quiet piper-tts==1.8.0 numpy
+          python3 gen_audio.py . ${{ steps.missing.outputs.ids }}
+      - name: Publier
+        if: steps.missing.outputs.ids != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "UpDate (audio)"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fiches.json *-f.mp3 *-h.mp3
+          git diff --cached --quiet && { echo "Rien de nouveau."; exit 0; }
+          git commit -q -m "Audio des fiches : ${{ steps.missing.outputs.ids }}"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q && break; sleep 5; done
+          gh api -X POST "repos/${{ github.repository }}/pages/builds" >/dev/null || echo "Reconstruction du site non demandée (sans gravité)."

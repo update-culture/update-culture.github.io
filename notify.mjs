@@ -18,6 +18,28 @@ function fail(msg) { console.error("Erreur : " + msg); process.exit(1); }
 if (!SERVICE_KEY) fail("le secret SUPABASE_SERVICE_ROLE_KEY est absent.");
 if (!VAPID_PRIVATE) fail("le secret VAPID_PRIVATE_KEY est absent.");
 
+// Veille : si la réserve de fiches baisse (la rédaction de nuit ne publie plus), on ouvre une alerte
+// dans le dépôt GitHub ; le propriétaire du dépôt la reçoit par e-mail. Une seule alerte ouverte à la fois.
+await (async () => {
+  const token = process.env.GITHUB_TOKEN, repo = process.env.GITHUB_REPOSITORY;
+  if (!token || !repo) return;
+  const all = JSON.parse(fs.readFileSync("fiches.json", "utf8")).map(f => f.date).sort();
+  const todayIso = new Intl.DateTimeFormat("fr-CA", { timeZone: "Europe/Paris" }).format(new Date());
+  const last = all[all.length - 1] || todayIso;
+  const ahead = Math.round((Date.parse(last) - Date.parse(todayIso)) / 864e5);
+  if (ahead >= 3) return;
+  const gh = (path, opt = {}) => fetch(`https://api.github.com/repos/${repo}${path}`, { ...opt, headers: { Authorization: `Bearer ${token}`, Accept: "application/vnd.github+json", "Content-Type": "application/json" } });
+  try {
+    const open = await (await gh("/issues?state=open&per_page=50")).json();
+    if (Array.isArray(open) && open.some(i => (i.title || "").startsWith("Réserve de fiches basse"))) { console.log("Alerte « réserve basse » déjà ouverte."); return; }
+    await gh("/issues", { method: "POST", body: JSON.stringify({
+      title: `Réserve de fiches basse : dernière fiche le ${last}`,
+      body: `Il ne reste que ${Math.max(ahead, 0)} jour(s) de fiches d'avance (dernière fiche : ${last}).\n\nLa rédaction de nuit n'a sans doute pas publié ces derniers jours. Consultez le fichier \`etat-redaction.json\` du dépôt et le compte-rendu de la tâche « UpDate : nouvelle fiche du jour » dans Claude, ou demandez à Claude d'ajouter les fiches manquantes.\n\nCette alerte peut être fermée une fois le problème réglé.`
+    }) });
+    console.log(`Alerte ouverte : ${ahead} jour(s) d'avance seulement.`);
+  } catch (e) { console.log("Veille de la réserve : " + e.message); }
+})();
+
 // GitHub lance souvent les tâches planifiées avec du retard (parfois près d'une heure) :
 // on ne se fie donc pas à l'heure d'arrivée, mais à la ligne de planification qui correspond à 7 h à Paris ce jour-là
 // (5 h 15 UTC en heure d'été, 6 h 15 UTC en heure d'hiver). Une seule des deux envoie : pas de doublon.
