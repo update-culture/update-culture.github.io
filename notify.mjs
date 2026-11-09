@@ -50,11 +50,14 @@ const cfg = fs.readFileSync("config.js", "utf8");
 const SUPA_URL = (cfg.match(/supabaseUrl:\s*"([^"]+)"/) || [])[1];
 if (!SUPA_URL) fail("adresse Supabase introuvable dans config.js.");
 
-// Fiche du jour (ou la plus récente déjà passée).
+// Fiche du jour : uniquement celle datée d'aujourd'hui (jamais une ancienne présentée comme « du jour »).
 const today = new Intl.DateTimeFormat("fr-CA", { timeZone: TZ }).format(new Date()); // AAAA-MM-JJ
 const fiches = JSON.parse(fs.readFileSync("fiches.json", "utf8")).sort((a, b) => a.date.localeCompare(b.date));
-const fiche = fiches.find(f => f.date === today) || fiches.filter(f => f.date <= today).pop();
-if (!fiche) fail("aucune fiche disponible.");
+const fiche = fiches.find(f => f.date === today);
+if (!fiche) {
+  console.log(`Aucune fiche datée du ${today} : pas de notification aujourd'hui (dernière fiche : ${fiches.length ? fiches[fiches.length - 1].date : "aucune"}).`);
+  process.exit(0);
+}
 const dimanche = new Intl.DateTimeFormat("fr-FR", { timeZone: TZ, weekday: "long" }).format(new Date()) === "dimanche";
 const payload = JSON.stringify({
   title: `Fiche du jour · ${fiche.cat}`,

@@ -252,6 +252,7 @@ button.wk{cursor:pointer}button.wk:hover{border-color:var(--accent)}
 .acc{max-width:720px;padding-block:32px 20px}
 .acc .rev-h{margin-bottom:20px}
 .gate-intro{margin-bottom:22px}
+.late{margin:0 0 12px;padding:10px 12px;border-radius:6px;background:var(--accent-soft);font-size:15px;max-width:62ch}
 .wait-card{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
 .wait-ico{width:56px;height:56px;border-radius:50%;background:var(--accent-soft);display:grid;place-items:center;margin-bottom:8px}
 .wait-ico svg{width:28px;height:28px;fill:none;stroke:var(--accent);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
@@ -333,6 +334,7 @@ button.wk{cursor:pointer}button.wk:hover{border-color:var(--accent)}
   <section class="hero">
     <div class="tear" aria-hidden="true"><div class="wd" id="hWd"></div><div class="dn" id="hDn"></div><div class="mo" id="hMo"></div></div>
     <div class="hero-txt">
+      <p class="late" id="hLate" hidden></p>
       <span class="chip" id="hCat"></span>
       <h1 id="hTitle"></h1>
       <p class="lede" id="hLede"></p>
@@ -409,7 +411,7 @@ button.wk{cursor:pointer}button.wk:hover{border-color:var(--accent)}
       <div><span class="label">Mémoire</span><h2 id="revTitle">Révision</h2></div>
       <button class="back" id="revClose" type="button">Fermer</button>
     </div>
-    <p class="rev-intro" id="revIntro">Les questions reviennent juste avant que vous les oubliiez : une bonne réponse les espace (1, 3, 7, 14 puis 30 jours), une erreur les fait revenir dès demain.</p>
+    <p class="rev-intro" id="revIntro">Les révisions portent sur les fiches de la semaine, du lundi au dimanche. Une bonne réponse retire la question jusqu'à dimanche, une erreur la garde dans la liste. Dimanche : révision complète de la semaine. Lundi : tout repart à zéro.</p>
     <div class="dots" id="revDots" aria-hidden="true"></div>
     <div id="revBody"></div>
   </section>
@@ -431,7 +433,7 @@ const store={get(k,d){try{const v=localStorage.getItem("update:"+k);return v?JSO
 const iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
 const parse=s=>{const[y,m,d]=s.split("-").map(Number);return new Date(y,m-1,d)};
 const addDays=(s,n)=>{const d=parse(s);d.setDate(d.getDate()+n);return iso(d)};
-const TODAY=iso(new Date());
+let TODAY=iso(new Date());
 
 let FICHES=[],BYDATE={},BYID={},UNLOCKED=[],shownDate=TODAY;
 function ficheOn(day){
@@ -448,6 +450,8 @@ function streak(){const v=store.get("days",[]);let s=0;while(v.includes(addDays(
 
 /* ---- Rendu d'une fiche ---- */
 function render(day){
+  { const f0=ficheOn(day),miss=day===TODAY&&!BYDATE[TODAY]&&f0.date<TODAY;
+    $("hLate").hidden=!miss;if(miss)$("hLate").textContent="La fiche d'aujourd'hui n'est pas encore prête. Voici la plus récente, celle du "+shortDay(f0.date)+"."; }
   shownDate=day;const f=ficheOn(day);const d=parse(f.date);markRead(f.id);
   $("hWd").textContent=JOURS[d.getDay()];$("hDn").textContent=d.getDate();$("hMo").textContent=MOIS[d.getMonth()]+" "+d.getFullYear();
   $("hCat").textContent=f.cat;$("hTitle").textContent=f.title;$("hLede").textContent=f.lede;
@@ -530,28 +534,32 @@ $("wkPrev").addEventListener("click",()=>{weekOff--;renderWeek()});
 $("wkNext").addEventListener("click",()=>{if(weekOff<0){weekOff++;renderWeek()}});
 function renderSheets(){if(!$("vWeek").hidden)renderWeek()}
 
-/* ---- Révision espacée (boîtes de Leitner) ----
-   Bonne réponse : la question monte d'une boîte et revient plus tard (1, 3, 7, 14 puis 30 jours).
-   Mauvaise réponse : retour en boîte 1, elle revient dès demain. */
-const GAPS=[0,1,3,7,14,30];
+/* ---- Révisions de la semaine ----
+   Les révisions portent uniquement sur les fiches de la semaine en cours, du lundi au dimanche.
+   Une bonne réponse retire la question jusqu'à dimanche ; une erreur la garde dans la liste.
+   Le dimanche : révision complète de la semaine. Le lundi : tout repart à zéro, même si des révisions
+   n'ont pas été faites (rien ne s'accumule d'une semaine sur l'autre). */
+const weekMon=d=>{const x=parse(d);x.setDate(x.getDate()-((x.getDay()+6)%7));return iso(x)};
 const srs=()=>store.get("srs",{});
 function grade(key,ok){
-  const S=srs();const r=S[key]||{b:0,n:0,w:0};
-  r.b=ok?Math.min(5,r.b+1):1;r.n++;if(!ok)r.w++;r.due=addDays(TODAY,GAPS[r.b]);r.last=TODAY;
+  const S=srs();const r=S[key]||{n:0,w:0};
+  r.n=(r.n||0)+1;if(!ok)r.w=(r.w||0)+1;r.ok=ok;r.last=TODAY;
   S[key]=r;store.set("srs",S);
 }
+const thisWeek=r=>!!r&&(r.last||"")>=weekMon(TODAY);          // réponse donnée cette semaine
+const wasOk=r=>r.ok===true||(r.ok===undefined&&(r.b||0)>1);   // (compatibilité avec les anciennes réponses)
 function pool(){
-  const read=store.get("lus",[]);const out=[];
-  UNLOCKED.forEach(f=>{if(!read.includes(f.id))return;f.quiz.forEach((q,k)=>out.push({f,k,q,key:f.id+":"+k}))});
+  const ws=weekMon(TODAY),read=store.get("lus",[]),out=[];
+  UNLOCKED.forEach(f=>{if(f.date<ws||f.date>TODAY||!read.includes(f.id))return;f.quiz.forEach((q,k)=>out.push({f,k,q,key:f.id+":"+k}))});
   return out;
 }
 const isSunday=()=>parse(TODAY).getDay()===0;
 function dueList(){
   const S=srs();
-  return pool().filter(x=>!S[x.key]||S[x.key].due<=TODAY)
-    .sort((a,b)=>{const ra=S[a.key],rb=S[b.key];const pa=ra?(ra.b===1?0:2):1,pb=rb?(rb.b===1?0:2):1;return pa-pb||(ra?ra.b:0)-(rb?rb.b:0)});
+  return pool().filter(x=>{const r=S[x.key];return !thisWeek(r)||!wasOk(r)})
+    .sort((a,b)=>{const ra=S[a.key],rb=S[b.key];const pa=thisWeek(ra)?0:1,pb=thisWeek(rb)?0:1;return pa-pb||(a.f.date<b.f.date?-1:a.f.date>b.f.date?1:a.k-b.k)});
 }
-function weekList(){const from=addDays(TODAY,-6);return pool().filter(x=>x.f.date>=from&&x.f.date<=TODAY)}
+function weekList(){return pool()}
 function updateRevCount(){
   const n=dueList().length;$("revN").textContent=n;$("revN").hidden=n===0;
   $("revBtn").classList.toggle("hot",n>0||isSunday());
@@ -577,7 +585,7 @@ function closeRev(){
 function startRev(extra,mode){
   let items;R=R||{};
   if(mode==="quiz"){items=QF.quiz.map((q,k)=>({f:QF,k,q,key:QF.id+":"+k}))}
-  else if(isSunday()&&!extra){const seen=new Set();items=[...dueList(),...shuffle(weekList())].filter(x=>!seen.has(x.key)&&seen.add(x.key)).slice(0,10)}
+  else if(isSunday()&&!extra){const seen=new Set();items=[...dueList(),...shuffle(weekList())].filter(x=>!seen.has(x.key)&&seen.add(x.key))}
   else if(extra)items=shuffle(pool()).slice(0,5);
   else items=dueList().slice(0,5);
   R={items:items.map(x=>({...x,order:shuffle(x.q.o.map((_,i)=>i))})),i:0,ok:0,missed:[],retry:new Set(),title:mode==="quiz"?"Quiz : "+QF.title:isSunday()&&!extra?"Révision de la semaine":"Révision",mode};
@@ -587,8 +595,8 @@ function startRev(extra,mode){
 }
 function revEmpty(){
   const hasPool=pool().length>0;
-  $("revBody").innerHTML=`<div class="rev-card"><p class="rq">${hasPool?"Rien à réviser aujourd'hui.":"Lisez d'abord une fiche pour pouvoir la réviser."}</p>
-   <p class="rev-note">${hasPool?"Vos réponses récentes sont encore fraîches. Les questions reviendront au bon moment, de plus en plus espacées.":"Les questions des fiches que vous ouvrez s'ajoutent automatiquement à vos révisions."}</p>
+  $("revBody").innerHTML=`<div class="rev-card"><p class="rq">${hasPool?"Tout est révisé pour l'instant.":"Rien à réviser pour le moment."}</p>
+   <p class="rev-note">${hasPool?(isSunday()?"Bravo, la semaine est révisée. Demain lundi, les révisions repartent de zéro avec les nouvelles fiches.":"Les questions réussies reviendront dimanche, pour la révision de la semaine. Lundi, les révisions repartent de zéro avec les nouvelles fiches."):"Les révisions portent sur les fiches de cette semaine. Lisez la fiche du jour : ses questions s'ajouteront à vos révisions."}</p>
    <div class="rev-act">${hasPool?'<button class="btn" id="revExtra" type="button">Réviser quand même</button>':""}<button class="back" id="revClose2" type="button">Retour à la fiche</button></div></div>`;
   $("revDots").innerHTML="";
   if(hasPool)$("revExtra").addEventListener("click",()=>startRev(true));
@@ -598,7 +606,7 @@ function revQ(){
   const it=R.items[R.i];const S=srs();const rec=S[it.key];
   $("revDots").innerHTML=R.items.map((_,i)=>`<span class="${i<R.i?(R.items[i].res?"ok":"ko"):i===R.i?"now":""}"></span>`).join("");
   $("revBody").innerHTML=`<div class="rev-card">
-    <div class="rev-meta"><span class="chip">${esc(it.f.cat)}</span><span class="label">${rec?"Boîte "+rec.b+" sur 5":"Nouvelle question"} · ${R.i+1}/${R.items.length}</span></div>
+    <div class="rev-meta"><span class="chip">${esc(it.f.cat)}</span><span class="label">${R.mode==="quiz"?"":"Fiche du "+shortDay(it.f.date)+" · "}${R.i+1}/${R.items.length}</span></div>
     <p class="rq">${esc(it.q.q)}</p>
     <div class="opts">${it.order.map(i=>`<button class="opt" type="button" id="rv-${R.i}-${i}" data-i="${i}">${esc(it.q.o[i])}</button>`).join("")}</div>
     <div id="revFb" hidden></div></div>`;
@@ -607,11 +615,10 @@ function revQ(){
     $("revBody").querySelectorAll(".opt").forEach(x=>{x.disabled=true;if(+x.dataset.i===it.q.a)x.classList.add("good")});
     if(!ok)b.classList.add("bad");
     grade(it.key,ok);if(ok)R.ok++;else R.missed.push(it);
-    const r=srs()[it.key];
-    const when=r.b===1?"demain":"dans "+GAPS[r.b]+" jours";
+
     const fb=$("revFb");fb.hidden=false;
     fb.innerHTML=`<p class="fb"><strong>${ok?"Bonne réponse.":"Pas tout à fait."}</strong> ${esc(it.q.e)}</p>
-      <p class="rev-note">${ok?"Vous la reverrez "+when+" dans vos révisions.":"Elle reviendra "+when+" dans vos révisions pour bien l'ancrer."}${R.mode==="quiz"?"":` · Fiche : <a href="#" data-d="${it.f.date}" class="rev-link">${esc(it.f.title)}</a>`}</p>
+      <p class="rev-note">${ok?(isSunday()?"Bien retenue.":"Bien retenue : elle ne reviendra que dimanche, pour la révision de la semaine."):"Elle reste dans vos révisions de la semaine pour bien l'ancrer."}${R.mode==="quiz"?"":` · Fiche : <a href="#" data-d="${it.f.date}" class="rev-link">${esc(it.f.title)}</a>`}</p>
       <div class="rev-act"><button class="btn" id="revNext" type="button">${R.i+1<R.items.length?"Question suivante":"Voir mon résultat"}</button></div>`;
     const rl=fb.querySelector(".rev-link");if(rl)rl.addEventListener("click",e=>{e.preventDefault();closeRev();render(it.f.date)});
     $("revNext").addEventListener("click",()=>{R.i++;R.i<R.items.length?revQ():revEnd()});
@@ -626,7 +633,7 @@ function revEnd(){
   $("revBody").innerHTML=`<div class="rev-card">
     <span class="label">Résultat</span>
     <p class="score"><span>${R.ok}</span>/${n}</p>
-    <p class="rev-note">${R.mode==="quiz"?(pct===100?"Sans faute ! ":pct>=60?"Bien joué. ":"Pas facile ! ")+"Ces questions sont maintenant dans vos révisions et reviendront au bon moment.":pct===100?"Sans faute. Ces questions reviendront dans plusieurs jours, de plus en plus espacées.":pct>=60?"Bon travail. Les questions ratées reviendront dès demain.":"Ces notions sont encore fragiles : elles reviendront dès demain, c'est normal et c'est comme ça qu'on retient."}</p>
+    <p class="rev-note">${R.mode==="quiz"?(pct===100?"Sans faute ! ":pct>=60?"Bien joué. ":"Pas facile ! ")+"Ces questions font maintenant partie de vos révisions de la semaine.":pct===100?(isSunday()?"Sans faute : votre semaine est révisée !":"Sans faute. Rendez-vous dimanche pour la révision de la semaine."):pct>=60?"Bon travail. Les questions ratées restent dans vos révisions de la semaine.":"Ces notions sont encore fragiles : elles restent dans vos révisions de la semaine, c'est comme ça qu'on retient."}</p>
     ${R.missed.length&&R.mode!=="quiz"?`<span class="label">À relire</span><ul class="miss">${R.missed.filter((it,i,a)=>a.findIndex(x=>x.f.id===it.f.id)===i).map(it=>`<li><a href="#" data-d="${it.f.date}">${esc(it.f.title)}</a></li>`).join("")}</ul>`:""}
     <div class="rev-act">${R.mode!=="quiz"&&left?`<button class="btn" id="revMore" type="button">Continuer (${left} à revoir)</button>`:""}${R.mode==="quiz"&&left?`<button class="btn" id="revMore" type="button">Réviser mes autres questions (${left})</button>`:""}<button class="back" id="revClose3" type="button">Retour à la fiche</button></div></div>`;
   $("revBody").querySelectorAll(".miss a").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();closeRev();render(a.dataset.d)}));
@@ -1022,10 +1029,12 @@ async function renderPush(){
     box.innerHTML=head+`<p class="rev-note">Les notifications sont bloquées pour UpDate dans les réglages de ce navigateur ou de cet appareil. Autorisez-les, puis revenez ici.</p>`;return}
   const sub=await currentSub();const on=(!!sub||pushWanted())&&Notification.permission==="granted";
   if(on&&!sub&&!ENSURING)setTimeout(ensurePush,0);
-  box.innerHTML=head+`<p class="rev-note">${on?"Activées sur cet appareil. Vous recevrez le titre de la fiche du jour vers "+PUSH_HOUR+".":"Une notification vers "+PUSH_HOUR+" avec le titre de la fiche du jour. Le réglage vaut pour cet appareil ; activez-le aussi sur vos autres appareils si vous le souhaitez."}</p>
+  const card=$("pushCard");if(!card)return; // l'écran a pu être redessiné pendant l'attente
+  card.innerHTML=head+`<p class="rev-note">${on?"Activées sur cet appareil. Vous recevrez le titre de la fiche du jour vers "+PUSH_HOUR+".":"Une notification vers "+PUSH_HOUR+" avec le titre de la fiche du jour. Le réglage vaut pour cet appareil ; activez-le aussi sur vos autres appareils si vous le souhaitez."}</p>
     ${pushMsg?`<p class="acc-msg" role="status">${pushMsg}</p>`:""}
     <div class="rev-act"><button class="${on?"back":"btn"}" type="button" id="pushBtn">${on?"Désactiver sur cet appareil":"Activer les notifications"}</button></div>`;
-  $("pushBtn").addEventListener("click",async()=>{$("pushBtn").disabled=true;pushMsg="";if(on)await disablePush(false);else await enablePush();renderPush()});
+  const pb=card.querySelector("#pushBtn");if(!pb)return;
+  pb.addEventListener("click",async()=>{pb.disabled=true;pushMsg="";if(on)await disablePush(false);else await enablePush();renderPush()});
 }
 async function enablePush(){
   if(!SB||!SESSION)return;
@@ -1113,13 +1122,39 @@ function precacheWeek(){if(!("caches" in window))return;
   caches.keys().then(k=>{const v=k.find(n=>n.startsWith("update-"));if(v)caches.open(v).then(c=>Promise.all(imgs.map(u=>c.match(u).then(h=>h||c.add(u).catch(()=>{})))))}).catch(()=>{})}
 
 /* ---- Démarrage ---- */
-function init(data){
+function setFiches(data){
   FICHES=data.slice().sort((a,b)=>a.date<b.date?-1:1);
-  FICHES.forEach(f=>{BYDATE[f.date]=f;BYID[f.id]=f});
+  BYDATE={};BYID={};FICHES.forEach(f=>{BYDATE[f.date]=f;BYID[f.id]=f});
   UNLOCKED=FICHES.filter(f=>f.date<=TODAY);
   if(!UNLOCKED.length)UNLOCKED=[FICHES[0]];
-  initCloud();
 }
+let LAST_FETCH=Date.now();
+function init(data){setFiches(data);initCloud()}
+/* L'application installée peut rester ouverte en arrière-plan plusieurs jours :
+   à chaque retour (et chaque minute), on vérifie si la date a changé et si de nouvelles fiches sont publiées. */
+let REFRESHING=false;
+async function refreshDay(force){
+  if(REFRESHING||!FICHES.length)return;
+  const now=iso(new Date()),newDay=now!==TODAY;
+  if(!newDay&&!force&&Date.now()-LAST_FETCH<20*60*1000)return;
+  REFRESHING=true;
+  const wasToday=shownDate===TODAY||(!BYDATE[TODAY]&&ficheOn(shownDate)===ficheOn(TODAY));
+  const prevLatest=FICHES[FICHES.length-1].date,prevToday=ficheOn(TODAY).id;
+  TODAY=now;
+  try{const r=await fetch("fiches.json",{cache:"no-cache"});if(r.ok){setFiches(await r.json());LAST_FETCH=Date.now()}}catch(e){setFiches(FICHES)}
+  REFRESHING=false;
+  if(!STARTED||GATED)return;
+  const changed=newDay||FICHES[FICHES.length-1].date!==prevLatest||ficheOn(TODAY).id!==prevToday;
+  if(!changed)return;
+  if(newDay)recordVisit();
+  $("sStreak").textContent=streak();updateRevCount();renderSheets();
+  if(wasToday&&!$("vFiche").hidden&&aud.paused)render(TODAY);
+  else if(wasToday&&$("vFiche").hidden)shownDate=TODAY;
+}
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")refreshDay()});
+window.addEventListener("focus",()=>refreshDay());
+window.addEventListener("pageshow",()=>refreshDay());
+setInterval(()=>{if(document.visibilityState==="visible"&&iso(new Date())!==TODAY)refreshDay()},60000);
 /* Accès réservé aux comptes connectés : sans session, seul l'écran de connexion est visible. */
 let GATED=false,STARTED=false;
 function gate(){

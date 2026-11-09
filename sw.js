@@ -1,6 +1,6 @@
 /* UpDate — service worker : rend l'application installable et utilisable hors ligne.
    Augmentez VERSION à chaque mise à jour de index.html pour forcer le rafraîchissement. */
-const VERSION = "update-v10";
+const VERSION = "update-v11";
 // Réglages Supabase (adresse et clé publique), utiles pour renouveler un abonnement aux notifications.
 self.window = self;
 try { importScripts("config.js"); } catch (e) {}
