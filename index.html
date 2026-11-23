@@ -452,7 +452,7 @@ function streak(){const v=store.get("days",[]);let s=0;while(v.includes(addDays(
 function render(day){
   { const f0=ficheOn(day),miss=day===TODAY&&!BYDATE[TODAY]&&f0.date<TODAY;
     $("hLate").hidden=!miss;if(miss)$("hLate").textContent="La fiche d'aujourd'hui n'est pas encore prête. Voici la plus récente, celle du "+shortDay(f0.date)+"."; }
-  shownDate=day;const f=ficheOn(day);const d=parse(f.date);markRead(f.id);
+  shownDate=day;const f=ficheOn(day);const d=parse(day===TODAY?TODAY:f.date);markRead(f.id); // en-tête : toujours la vraie date du jour
   $("hWd").textContent=JOURS[d.getDay()];$("hDn").textContent=d.getDate();$("hMo").textContent=MOIS[d.getMonth()]+" "+d.getFullYear();
   $("hCat").textContent=f.cat;$("hTitle").textContent=f.title;$("hLede").textContent=f.lede;
   $("fImg").src=f.img;$("fImg").alt=f.cap;$("fCap").textContent=f.cap;$("fCr").textContent="Photo : "+f.cr;
