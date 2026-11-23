@@ -3144,5 +3144,775 @@
     "dur": 142.2
    }
   }
+ },
+ {
+  "id": "ok",
+  "date": "2026-11-23",
+  "cat": "Langue",
+  "img": "ok.jpg",
+  "commons": "File:Martin Van Buren LCCN2003656300.jpg",
+  "cr": "Popular Graphic Arts, Bibliothèque du Congrès, domaine public",
+  "title": "« OK » est né d'une blague de journaliste, à Boston, en 1839",
+  "lede": "C'est peut-être le mot le plus utilisé au monde. Il est apparu dans un journal américain comme une abréviation volontairement mal orthographiée, puis une campagne présidentielle l'a rendu célèbre.",
+  "cap": "Martin Van Buren, surnommé « Old Kinderhook », dessiné vers 1837-1841. Ses partisans ont popularisé le mot « OK ».",
+  "body": [
+   [
+    "h",
+    "Une mode des abréviations"
+   ],
+   [
+    "p",
+    "À la fin des années 1830, les journaux de Boston s'amusent avec une mode étrange : abréger des expressions, et souvent en les écrivant de travers exprès. On trouve par exemple « K.G. » pour « know go », une façon fautive d'écrire « no go », ou « O.W. » pour « oll wright », c'est-à-dire « all right »."
+   ],
+   [
+    "p",
+    "Le 23 mars 1839, le Boston Morning Post, dirigé par Charles Gordon Greene, publie un article moqueur visant un autre journal, le Providence Journal. On y lit « o.k. », expliqué comme l'abréviation de « oll korrect ». Il fallait comprendre « all correct » : « tout est correct »."
+   ],
+   [
+    "h",
+    "Une campagne présidentielle le rend célèbre"
+   ],
+   [
+    "p",
+    "La plupart de ces abréviations ont vite disparu. Mais « OK » a eu de la chance. En 1840, le président Martin Van Buren se présente pour un second mandat. Il est surnommé « Old Kinderhook », du nom de sa ville natale, Kinderhook, dans l'État de New York. Ses partisans reprennent les initiales : ils créent des « OK Clubs » et le slogan « Vote for OK ». Van Buren perd l'élection, mais le mot, lui, reste."
+   ],
+   [
+    "h",
+    "Une origine longtemps oubliée"
+   ],
+   [
+    "p",
+    "Pendant plus d'un siècle, on a proposé toutes sortes d'origines : une expression amérindienne, un mot écossais, un port d'Haïti, ou encore les initiales d'un grade militaire allemand. Dans les années 1960, le linguiste américain Allen Walker Read, de l'université Columbia, a retrouvé les journaux de 1839 et montré que la piste de « oll korrect » était la bonne. C'est aujourd'hui l'explication la plus admise, même si le débat n'a jamais complètement disparu."
+   ],
+   [
+    "p",
+    "Depuis, « OK » a fait le tour du monde. On l'écrit aussi « okay », une forme qui ne vient pas de son origine mais qui s'est imposée avec le temps. Il est devenu un mot que l'on comprend presque partout, quelle que soit la langue que l'on parle."
+   ]
+  ],
+  "figs": [
+   [
+    "1839",
+    "première apparition dans le Boston Morning Post"
+   ],
+   [
+    "« oll korrect »",
+    "la blague d'origine, pour « all correct »"
+   ],
+   [
+    "1840",
+    "la campagne de Van Buren qui le rend célèbre"
+   ]
+  ],
+  "keep": [
+   "« OK » vient de « oll korrect », une blague de journaliste publiée à Boston en 1839.",
+   "La campagne de Martin Van Buren, « Old Kinderhook », l'a popularisé en 1840.",
+   "Le linguiste Allen Walker Read a retrouvé cette origine dans les années 1960."
+  ],
+  "quiz": [
+   {
+    "q": "Que signifiait « OK » à l'origine ?",
+    "o": [
+     "« Oll korrect », une façon fautive d'écrire « all correct »",
+     "« Objectif kilométrique », un terme de chemin de fer",
+     "Les initiales d'un général américain"
+    ],
+    "a": 0,
+    "e": "Le Boston Morning Post l'a utilisé en 1839 comme abréviation volontairement mal orthographiée de « all correct »."
+   },
+   {
+    "q": "Quel président a contribué à rendre « OK » célèbre ?",
+    "o": [
+     "Abraham Lincoln",
+     "Martin Van Buren",
+     "George Washington"
+    ],
+    "a": 1,
+    "e": "Surnommé « Old Kinderhook », Martin Van Buren a vu ses partisans créer des « OK Clubs » pendant la campagne de 1840."
+   },
+   {
+    "q": "Qui a retrouvé l'origine du mot ?",
+    "o": [
+     "Un journaliste de Boston en 1900",
+     "Le linguiste Allen Walker Read, dans les années 1960",
+     "Un dictionnaire français en 1950"
+    ],
+    "a": 1,
+    "e": "Allen Walker Read a étudié les journaux de 1839 et publié ses résultats dans les années 1960."
+   }
+  ],
+  "src": [
+   [
+    "How the Word \"OK\" Was Invented 175 Years Ago (Smithsonian Magazine)",
+    "https://www.smithsonianmag.com/smart-news/how-word-ok-was-invented-175-years-ago-180953258/"
+   ],
+   [
+    "Ce que signifie réellement le mot « OK » (Slate.fr)",
+    "https://www.slate.fr/story/242537/signification-mot-ok-origine-expression-etats-unis-politique-journaux-linguistique-etymologie"
+   ],
+   [
+    "The Hilarious History of 'OK' (Merriam-Webster)",
+    "https://www.merriam-webster.com/wordplay/the-hilarious-history-of-ok-okay"
+   ]
+  ]
+ },
+ {
+  "id": "darwin",
+  "date": "2026-11-24",
+  "cat": "Sciences",
+  "img": "darwin.jpg",
+  "commons": "File:Origin of Species title page.jpg",
+  "cr": "Page de titre de la première édition (John Murray, Londres, 1859), domaine public",
+  "title": "Le livre de Darwin sur l'évolution s'est arraché dès sa sortie, le 24 novembre 1859",
+  "lede": "« De l'origine des espèces » a changé notre façon de voir le vivant. Le premier tirage, 1 250 exemplaires, était déjà entièrement réservé avant même sa mise en vente.",
+  "cap": "La page de titre de la première édition de « On the Origin of Species », publiée à Londres en 1859.",
+  "body": [
+   [
+    "h",
+    "Un voyage qui change tout"
+   ],
+   [
+    "p",
+    "Dans les années 1830, le jeune naturaliste anglais Charles Darwin embarque sur le HMS Beagle pour une expédition de cinq ans autour du monde. Il observe, note et collecte des milliers de spécimens, notamment aux îles Galápagos. De retour en Angleterre, une question l'obsède : comment les espèces apparaissent-elles et changent-elles ?"
+   ],
+   [
+    "p",
+    "Darwin a formulé l'essentiel de sa théorie dès 1844, mais il attend, rassemble des preuves et hésite à publier. Tout s'accélère en 1858, quand un autre naturaliste, Alfred Russel Wallace, lui envoie un texte qui arrive presque aux mêmes conclusions. Darwin se décide enfin."
+   ],
+   [
+    "h",
+    "La sélection naturelle"
+   ],
+   [
+    "p",
+    "Son livre paraît à Londres le 24 novembre 1859, d'après le journal de Darwin. L'idée centrale est la sélection naturelle : dans une population, les individus ne sont pas tous identiques. Ceux dont les particularités sont les mieux adaptées à leur milieu ont plus de chances de survivre et de laisser des descendants. Génération après génération, les espèces se transforment."
+   ],
+   [
+    "p",
+    "L'idée d'une évolution des êtres vivants existait avant Darwin. Sa force est d'avoir proposé un mécanisme pour l'expliquer, et de l'avoir appuyé sur une montagne d'observations."
+   ],
+   [
+    "h",
+    "Un succès immédiat"
+   ],
+   [
+    "p",
+    "Le premier tirage de 1 250 exemplaires est épuisé dès sa sortie, et un deuxième tirage de 3 000 exemplaires est lancé aussitôt. Le livre connaît six éditions du vivant de Darwin, qui le corrige sans cesse. Le mot « évolution » n'y apparaît d'ailleurs qu'à partir de la sixième édition. En 1871, Darwin publie « La Filiation de l'homme », où il applique ses idées à l'espèce humaine. Aujourd'hui, l'ouvrage compte plus de 250 éditions en anglais et a été traduit dans des dizaines de langues."
+   ]
+  ],
+  "figs": [
+   [
+    "1 250",
+    "exemplaires au premier tirage, tous partis"
+   ],
+   [
+    "5 ans",
+    "de voyage à bord du Beagle"
+   ],
+   [
+    "6",
+    "éditions du vivant de Darwin"
+   ]
+  ],
+  "keep": [
+   "« De l'origine des espèces » est paru le 24 novembre 1859 et s'est épuisé aussitôt.",
+   "Darwin y explique l'évolution par la sélection naturelle.",
+   "Alfred Russel Wallace était arrivé à des conclusions très proches en 1858."
+  ],
+  "quiz": [
+   {
+    "q": "Quel mécanisme Darwin propose-t-il pour expliquer l'évolution ?",
+    "o": [
+     "La sélection naturelle",
+     "L'hérédité des caractères acquis par l'effort",
+     "Les mutations provoquées par le climat"
+    ],
+    "a": 0,
+    "e": "Les individus les mieux adaptés à leur milieu survivent et se reproduisent davantage : c'est la sélection naturelle."
+   },
+   {
+    "q": "Quel naturaliste est arrivé à des idées très proches en 1858 ?",
+    "o": [
+     "Isaac Newton",
+     "Alfred Russel Wallace",
+     "Louis Pasteur"
+    ],
+    "a": 1,
+    "e": "Wallace a envoyé à Darwin un texte qui résumait presque la même théorie, ce qui a poussé Darwin à publier."
+   },
+   {
+    "q": "Combien d'exemplaires comptait le premier tirage ?",
+    "o": [
+     "150",
+     "1 250",
+     "50 000"
+    ],
+    "a": 1,
+    "e": "Les 1 250 exemplaires sont partis tout de suite, et un deuxième tirage de 3 000 exemplaires a été lancé."
+   }
+  ],
+  "src": [
+   [
+    "Darwin's On the Origin of Species was published today in 1859 (Smithsonian Libraries)",
+    "https://blog.library.si.edu/blog/2009/11/24/darwins-on-the-origin-of-species-was-published-today-in-1859"
+   ],
+   [
+    "On the Origin of Species (Christ's College, Cambridge)",
+    "https://www.christs.cam.ac.uk/node/1097"
+   ],
+   [
+    "Origin of Species is published (History.com)",
+    "https://www.history.com/this-day-in-history/november-24/origin-of-species-is-published-2"
+   ]
+  ]
+ },
+ {
+  "id": "colibri",
+  "date": "2026-11-25",
+  "cat": "Animaux",
+  "img": "colibri.jpg",
+  "commons": "File:Bee hummingbird (Mellisuga helenae) adult male in flight.jpg",
+  "cr": "Charles J. Sharp, CC BY-SA 4.0",
+  "title": "Le colibri est le seul oiseau capable de voler en marche arrière",
+  "lede": "Il fait du surplace devant les fleurs, recule, et bat des ailes des dizaines de fois par seconde. Pour tenir ce rythme, son corps fonctionne à une vitesse folle… puis se met presque en pause la nuit.",
+  "cap": "Un colibri d'Hélène mâle en vol, à Cuba. Avec environ 6 cm, c'est le plus petit oiseau du monde.",
+  "body": [
+   [
+    "h",
+    "Un hélicoptère à plumes"
+   ],
+   [
+    "p",
+    "Les colibris, aussi appelés oiseaux-mouches, vivent uniquement sur le continent américain, de l'Alaska à la Terre de Feu. On en connaît plus de 330 espèces. Tous savent faire du vol stationnaire : ils restent immobiles en l'air devant une fleur pour en aspirer le nectar."
+   ],
+   [
+    "p",
+    "Ils sont aussi les seuls oiseaux capables de voler en arrière. Pour cela, ils changent l'angle de leurs ailes à chaque battement. Et ces battements sont très rapides : en général 50 à 80 par seconde, parfois davantage selon les espèces."
+   ],
+   [
+    "h",
+    "Un moteur qui tourne à plein régime"
+   ],
+   [
+    "p",
+    "Voler ainsi demande énormément d'énergie. Les muscles du vol représentent 25 à 30 % du poids d'un colibri, contre environ 5 % chez l'humain. Chez certaines espèces, le cœur peut battre plus de 1 000 fois par minute pendant la journée. Pour faire le plein de sucre, un colibri peut visiter jusqu'à 1 000 fleurs par jour."
+   ],
+   [
+    "p",
+    "La nuit, impossible de manger. Pour ne pas épuiser ses réserves, le colibri entre en torpeur : sa température baisse fortement, sa respiration et son cœur ralentissent. Chez une espèce étudiée, le cœur passe de plus de 1 000 battements par minute le jour à environ 36 la nuit."
+   ],
+   [
+    "h",
+    "Le plus petit oiseau du monde"
+   ],
+   [
+    "p",
+    "Le record de petitesse appartient au colibri d'Hélène, qui vit à Cuba. Il mesure environ 6 centimètres, bec compris, et pèse à peu près 2 grammes, soit le poids de deux trombones. Il est si petit qu'on le confond parfois avec un bourdon. À Cuba, on l'appelle « zunzuncito », en imitant le bruit de ses ailes."
+   ]
+  ],
+  "figs": [
+   [
+    "50 à 80",
+    "battements d'ailes par seconde, en général"
+   ],
+   [
+    "≈ 2 g",
+    "le poids du colibri d'Hélène"
+   ],
+   [
+    "1 000",
+    "fleurs visitées par jour, au maximum"
+   ]
+  ],
+  "keep": [
+   "Le colibri est le seul oiseau qui vole en arrière.",
+   "Il bat des ailes des dizaines de fois par seconde et se met en torpeur la nuit.",
+   "Le colibri d'Hélène, à Cuba, est le plus petit oiseau du monde : environ 2 grammes."
+  ],
+  "quiz": [
+   {
+    "q": "Quelle capacité est propre au colibri parmi les oiseaux ?",
+    "o": [
+     "Nager sous l'eau",
+     "Voler en marche arrière",
+     "Voler la nuit sans lumière"
+    ],
+    "a": 1,
+    "e": "Il recule en changeant l'angle de ses ailes à chaque battement."
+   },
+   {
+    "q": "Que fait le colibri la nuit pour économiser son énergie ?",
+    "o": [
+     "Il mange en continu",
+     "Il entre en torpeur : sa température et son cœur ralentissent",
+     "Il migre vers le sud"
+    ],
+    "a": 1,
+    "e": "Son corps tourne au ralenti : chez une espèce, le cœur descend à environ 36 battements par minute."
+   },
+   {
+    "q": "Combien pèse le colibri d'Hélène, le plus petit oiseau du monde ?",
+    "o": [
+     "Environ 2 grammes",
+     "Environ 20 grammes",
+     "Environ 200 grammes"
+    ],
+    "a": 0,
+    "e": "À peu près le poids de deux trombones, pour environ 6 cm de long."
+   }
+  ],
+  "src": [
+   [
+    "Colibri (Larousse, encyclopédie Vie sauvage)",
+    "https://www.larousse.fr/encyclopedie/vie-sauvage/colibri/184040"
+   ],
+   [
+    "Le colibri, l'oiseau de tous les records (Futura)",
+    "https://www.futura-sciences.com/planete/photos/nature-colibri-oiseau-tous-records-2162/"
+   ],
+   [
+    "Le colibri d'Hélène, un oiseau tout mini (Espace des sciences)",
+    "https://espace-sciences.org/juniors/animaux/le-colibri-d-helene-un-oiseau-tout-mini"
+   ]
+  ]
+ },
+ {
+  "id": "toutankhamon",
+  "date": "2026-11-26",
+  "cat": "Histoire",
+  "img": "toutankhamon.jpg",
+  "commons": "File:CairoEgMuseumTaaMaskMostlyPhotographed.jpg",
+  "cr": "Roland Unger, CC BY-SA 3.0",
+  "title": "Le 26 novembre 1922, Howard Carter aperçoit le trésor de Toutânkhamon",
+  "lede": "À la lueur d'une bougie, l'archéologue découvre une tombe presque intacte, restée fermée pendant plus de 3 000 ans. À la question « Voyez-vous quelque chose ? », il répond : « Oui, des choses merveilleuses. »",
+  "cap": "Le masque funéraire de Toutânkhamon, en or, exposé au Musée égyptien du Caire.",
+  "body": [
+   [
+    "h",
+    "Une dernière chance"
+   ],
+   [
+    "p",
+    "Au début du XXe siècle, beaucoup d'experts pensent que la Vallée des Rois, en Égypte, n'a plus rien à révéler. L'archéologue britannique Howard Carter n'est pas de cet avis. Il fouille pour le compte d'un riche collectionneur, Lord Carnarvon. Après des années de recherches sans succès, Carnarvon accepte de financer une dernière campagne."
+   ],
+   [
+    "p",
+    "Le 4 novembre 1922, l'équipe de Carter dégage une marche taillée dans la roche. Puis un escalier apparaît, qui descend vers une porte scellée. Carter envoie un télégramme à Carnarvon, qui accourt d'Angleterre."
+   ],
+   [
+    "h",
+    "« Des choses merveilleuses »"
+   ],
+   [
+    "p",
+    "Le 26 novembre 1922, les deux hommes atteignent une seconde porte. Carter y perce un petit trou et passe une bougie. Peu à peu, il distingue dans la pénombre des statues, des meubles et de l'or partout. Carnarvon lui demande s'il voit quelque chose. Carter répond : « Oui, des choses merveilleuses. »"
+   ],
+   [
+    "p",
+    "La tombe n'avait pas été pillée comme les autres. Toutânkhamon, un pharaon mort jeune, avait été en grande partie oublié par l'histoire, et l'entrée de sa tombe était restée cachée."
+   ],
+   [
+    "h",
+    "Plus de 5 000 objets"
+   ],
+   [
+    "p",
+    "Vider la tombe prend des années. On y inventorie environ 5 400 objets : chars, bijoux, vêtements, statues, coffres. Il faut plus d'un an après l'ouverture pour atteindre le cercueil et le célèbre masque funéraire, qui pèse plus de 10 kilos. La momie du jeune roi repose dans trois cercueils emboîtés, dont le dernier est en or massif. Monté sur le trône enfant, Toutânkhamon est mort vers l'âge de 18 à 20 ans, il y a environ 3 300 ans."
+   ]
+  ],
+  "figs": [
+   [
+    "26 nov. 1922",
+    "Carter aperçoit le trésor"
+   ],
+   [
+    "≈ 5 400",
+    "objets inventoriés"
+   ],
+   [
+    "> 10 kg",
+    "le poids du masque funéraire"
+   ]
+  ],
+  "keep": [
+   "Howard Carter a découvert la tombe de Toutânkhamon en novembre 1922, dans la Vallée des Rois.",
+   "Le 26 novembre, il voit « des choses merveilleuses » à la lueur d'une bougie.",
+   "La tombe, presque intacte, contenait environ 5 400 objets."
+  ],
+  "quiz": [
+   {
+    "q": "Qui finançait les fouilles d'Howard Carter ?",
+    "o": [
+     "Le roi d'Égypte",
+     "Lord Carnarvon, un collectionneur britannique",
+     "Le musée du Louvre"
+    ],
+    "a": 1,
+    "e": "Lord Carnarvon avait accepté de financer une dernière campagne de recherches."
+   },
+   {
+    "q": "Que répond Carter quand on lui demande s'il voit quelque chose ?",
+    "o": [
+     "« Rien du tout »",
+     "« Oui, des choses merveilleuses »",
+     "« Une momie ! »"
+    ],
+    "a": 1,
+    "e": "Ces mots, prononcés à la lueur d'une bougie, sont restés célèbres."
+   },
+   {
+    "q": "Pourquoi la tombe était-elle presque intacte ?",
+    "o": [
+     "Elle était gardée par l'armée",
+     "Toutânkhamon avait été largement oublié et l'entrée était cachée",
+     "Elle se trouvait sous la mer"
+    ],
+    "a": 1,
+    "e": "Contrairement à d'autres tombes royales, elle avait échappé aux pilleurs."
+   }
+  ],
+  "src": [
+   [
+    "Archaeologists enter tomb of King Tut (History.com)",
+    "https://www.history.com/this-day-in-history/november-26/archaeologists-enter-tomb-of-king-tut"
+   ],
+   [
+    "La folle histoire derrière la découverte de la tombe de Toutânkhamon (Futura)",
+    "https://www.futura-sciences.com/sciences/actualites/archeologie-folle-histoire-derriere-decouverte-tombe-toutankhamon-101638/"
+   ],
+   [
+    "Why the discovery of Tutankhamun's tomb was the most significant find (Smithsonian Magazine)",
+    "https://www.smithsonianmag.com/smart-news/why-the-discovery-of-tutankhamuns-tomb-was-the-most-significant-archaeological-find-of-the-20th-century-180985382/"
+   ]
+  ]
+ },
+ {
+  "id": "sahara",
+  "date": "2026-11-27",
+  "cat": "Planète Terre",
+  "img": "sahara.jpg",
+  "commons": "File:Fondazione Passaré V31 360.jpg",
+  "cr": "Alessandro Passaré, Fondazione Passaré, CC BY-SA 3.0",
+  "title": "Il y a 8 000 ans, le Sahara était vert, avec des lacs et des hippopotames",
+  "lede": "Le plus grand désert chaud du monde a été une savane couverte de prairies et de lacs. Les peintures laissées sur les rochers par ses habitants le racontent encore.",
+  "cap": "Peinture rupestre de bovidés au Tassili n'Ajjer, en Algérie, datant de la « période des bovidés ».",
+  "body": [
+   [
+    "h",
+    "Une savane à la place du désert"
+   ],
+   [
+    "p",
+    "Entre environ 11 000 et 5 000 ans avant notre époque, le nord de l'Afrique a connu une longue période humide. Les scientifiques l'appellent la « période humide africaine ». Sur près de 9 millions de kilomètres carrés, le désert a laissé place à des prairies, des arbres, des rivières et de nombreux lacs, dont certains aussi grands que la mer Caspienne aujourd'hui."
+   ],
+   [
+    "p",
+    "Des hippopotames vivaient dans les rivières. On y croisait aussi des éléphants, des girafes, des antilopes et des aurochs, les ancêtres sauvages des bovins."
+   ],
+   [
+    "h",
+    "Un musée à ciel ouvert"
+   ],
+   [
+    "p",
+    "Les humains qui vivaient là ont laissé des centaines de milliers de gravures et de peintures sur les rochers, par exemple au Tassili n'Ajjer, en Algérie. On y voit des scènes de chasse, des animaux sauvages et, plus tard, des troupeaux de bovins. Ces images montrent un Sahara peuplé, très différent de celui que l'on connaît."
+   ],
+   [
+    "h",
+    "Tout dépend de l'orbite de la Terre"
+   ],
+   [
+    "p",
+    "La cause principale est astronomique. L'axe de la Terre décrit lentement un cercle, comme une toupie, selon un cycle d'environ 20 000 ans. Il y a 10 000 ans, ce mouvement faisait que l'été de l'hémisphère Nord recevait environ 7 % de soleil de plus qu'aujourd'hui. La mousson africaine, plus forte, apportait alors la pluie loin vers le nord."
+   ],
+   [
+    "p",
+    "Puis le rayonnement a diminué et les pluies ont reculé. Dans certaines régions, le passage au désert s'est fait en quelques siècles seulement ; ailleurs, il a pris des millénaires. Selon ce cycle, le Sahara devrait reverdir un jour, mais dans des milliers d'années, et les émissions humaines de gaz à effet de serre rendent l'échéance incertaine."
+   ]
+  ],
+  "figs": [
+   [
+    "11 000 à 5 000 ans",
+    "la dernière période humide africaine"
+   ],
+   [
+    "≈ 9 millions de km²",
+    "de désert devenus verts"
+   ],
+   [
+    "≈ 20 000 ans",
+    "le cycle du mouvement de l'axe terrestre"
+   ]
+  ],
+  "keep": [
+   "Le Sahara a été vert entre environ 11 000 et 5 000 ans avant notre époque.",
+   "Les peintures rupestres montrent hippopotames, girafes et troupeaux.",
+   "Ce changement est surtout dû au lent mouvement de l'axe de la Terre, qui renforçait la mousson."
+  ],
+  "quiz": [
+   {
+    "q": "Quel animal vivait dans les rivières du Sahara vert ?",
+    "o": [
+     "Le pingouin",
+     "L'hippopotame",
+     "Le kangourou"
+    ],
+    "a": 1,
+    "e": "Des hippopotames vivaient dans ses rivières et ses lacs, comme le montrent les fossiles et les peintures."
+   },
+   {
+    "q": "Quelle est la cause principale du Sahara vert ?",
+    "o": [
+     "Une modification de l'orbite et de l'axe de la Terre, qui renforçait la mousson",
+     "L'irrigation par les premiers agriculteurs",
+     "Une chute de météorite"
+    ],
+    "a": 0,
+    "e": "Le lent mouvement de l'axe terrestre augmentait l'ensoleillement d'été et renforçait la mousson africaine."
+   },
+   {
+    "q": "Comment sait-on à quoi ressemblait la vie dans le Sahara vert ?",
+    "o": [
+     "Grâce à des livres de l'époque",
+     "Notamment grâce aux peintures et gravures sur les rochers",
+     "Ce n'est qu'une hypothèse sans preuve"
+    ],
+    "a": 1,
+    "e": "Des centaines de milliers d'œuvres rupestres, mais aussi les sédiments et les pollens, en témoignent."
+   }
+  ],
+  "src": [
+   [
+    "Green Sahara: African Humid Periods Paced by Earth's Orbital Changes (Nature Education)",
+    "https://www.nature.com/scitable/knowledge/library/green-sahara-african-humid-periods-paced-by-82884405/"
+   ],
+   [
+    "Could the Sahara ever be green again? (Live Science)",
+    "https://www.livescience.com/amp/will-sahara-desert-turn-green.html"
+   ],
+   [
+    "From Green Paradise to Arid Expanse (Futura)",
+    "https://www.futura-sciences.com/en/?p=37493"
+   ]
+  ]
+ },
+ {
+  "id": "velcro",
+  "date": "2026-11-28",
+  "cat": "Inventions",
+  "img": "velcro.jpg",
+  "commons": "File:Velcro Hooks.jpg",
+  "cr": "Alexander Klink, CC BY 3.0",
+  "title": "Le Velcro a été inventé grâce aux boules de bardane accrochées à un chien",
+  "lede": "En 1941, un ingénieur suisse rentre de promenade couvert de petites boules piquantes. Au lieu de s'énerver, il les regarde au microscope. Quatorze ans plus tard, il brevette une fermeture qui fera le tour du monde.",
+  "cap": "Les minuscules crochets d'une bande Velcro, vus de près.",
+  "body": [
+   [
+    "h",
+    "Une promenade pleine de piquants"
+   ],
+   [
+    "p",
+    "George de Mestral est un ingénieur suisse, né en 1907 dans le canton de Vaud. En 1941, il rentre d'une promenade avec son chien. Son pantalon, sa veste et le pelage de l'animal sont couverts de capitules de bardane, ces petites boules végétales qui s'accrochent à tout."
+   ],
+   [
+    "p",
+    "Curieux, il en place une sous son microscope. Il découvre qu'elle est hérissée de minuscules crochets, qui s'agrippent aux boucles des fibres de ses vêtements et aux poils de son chien. Une idée lui vient : imiter ce système pour créer une fermeture."
+   ],
+   [
+    "h",
+    "Des années de mise au point"
+   ],
+   [
+    "p",
+    "Passer de l'idée à un produit est très long. Avec un tisserand, puis un fabricant de métiers à tisser, de Mestral cherche les bons matériaux. Le coton s'use trop vite. C'est le nylon qui convient : on tisse des boucles, puis on en coupe certaines pour former des crochets solides."
+   ],
+   [
+    "p",
+    "En 1955, environ quatorze ans après sa promenade, il dépose son brevet. Il nomme son invention Velcro, en combinant deux mots français : « velours » et « crochet »."
+   ],
+   [
+    "h",
+    "Des combinaisons spatiales aux chaussures"
+   ],
+   [
+    "p",
+    "Le succès vient avec le temps. Dans les années 1960, la NASA adopte la fermeture pour ses astronautes : elle a été utilisée lors des missions Apollo. Le ski et la plongée l'adoptent aussi, puis les vêtements, les sacs et les chaussures d'enfants. Velcro Industries vend bientôt plus de soixante millions de yards de bandes par an. De Mestral meurt en 1990. Son invention est l'un des exemples les plus célèbres de « biomimétisme », l'art de s'inspirer de la nature."
+   ]
+  ],
+  "figs": [
+   [
+    "1941",
+    "la promenade avec le chien"
+   ],
+   [
+    "1955",
+    "le brevet de la fermeture Velcro"
+   ],
+   [
+    "2 mots",
+    "« velours » + « crochet »"
+   ]
+  ],
+  "keep": [
+   "Le Velcro a été inspiré par les crochets des boules de bardane.",
+   "Son inventeur, le Suisse George de Mestral, l'a breveté en 1955.",
+   "Son nom vient de « velours » et « crochet »."
+  ],
+  "quiz": [
+   {
+    "q": "Quelle plante a inspiré le Velcro ?",
+    "o": [
+     "La bardane",
+     "Le cactus",
+     "Le lierre"
+    ],
+    "a": 0,
+    "e": "Ses petites boules couvertes de crochets s'accrochaient aux vêtements de George de Mestral et aux poils de son chien."
+   },
+   {
+    "q": "D'où vient le nom « Velcro » ?",
+    "o": [
+     "Du nom de l'inventeur",
+     "Des mots français « velours » et « crochet »",
+     "D'une ville suisse"
+    ],
+    "a": 1,
+    "e": "Une face porte des boucles, comme un velours, l'autre des crochets."
+   },
+   {
+    "q": "Quel matériau a permis de fabriquer des crochets solides ?",
+    "o": [
+     "Le coton",
+     "Le nylon",
+     "La soie"
+    ],
+    "a": 1,
+    "e": "Le coton s'usait trop vite ; le nylon a donné des crochets résistants."
+   }
+  ],
+  "src": [
+   [
+    "How a Swiss invention hooked the world (Swissinfo)",
+    "https://www.swissinfo.ch/eng/science/how-a-swiss-invention-hooked-the-world/5653568"
+   ],
+   [
+    "George de Mestral (Lemelson-MIT)",
+    "https://lemelson.mit.edu/resources/george-de-mestral"
+   ],
+   [
+    "Velcro's invention (History.com)",
+    "https://www.history.com/articles/velcro-invention"
+   ]
+  ]
+ },
+ {
+  "id": "lune",
+  "date": "2026-11-29",
+  "cat": "Espace",
+  "img": "lune.jpg",
+  "commons": "File:Apollo 11 Lunar Laser Ranging Experiment.jpg",
+  "cr": "NASA (mission Apollo 11), domaine public",
+  "title": "La Lune s'éloigne de la Terre de 3,8 cm par an",
+  "lede": "On le sait grâce à des miroirs posés sur la Lune par les astronautes. En leur envoyant des tirs laser depuis la Terre, les scientifiques mesurent la distance qui nous sépare de notre satellite à quelques millimètres près.",
+  "cap": "Le réflecteur laser installé sur la Lune par l'équipage d'Apollo 11, en juillet 1969.",
+  "body": [
+   [
+    "h",
+    "Des miroirs sur la Lune"
+   ],
+   [
+    "p",
+    "En juillet 1969, les astronautes d'Apollo 11 ne se sont pas contentés de planter un drapeau. Ils ont installé sur le sol lunaire un panneau de petits réflecteurs. Ces miroirs particuliers renvoient la lumière exactement dans la direction d'où elle vient."
+   ],
+   [
+    "p",
+    "D'autres réflecteurs ont suivi : deux avec les missions Apollo 14 et 15, et deux autres, de fabrication française, à bord des robots soviétiques Lunokhod. En France, les premiers tirs laser vers la Lune ont eu lieu à l'observatoire du Pic du Midi, en décembre 1970."
+   ],
+   [
+    "h",
+    "Un aller-retour chronométré"
+   ],
+   [
+    "p",
+    "Le principe est simple : on envoie une impulsion laser depuis un télescope et on mesure le temps qu'elle met pour revenir, environ deux secondes et demie. Comme on connaît la vitesse de la lumière, on en déduit la distance. En moyenne, la Lune se trouve à environ 385 000 kilomètres. La mesure est si difficile que, dans de bonnes conditions, une seule particule de lumière revient toutes les quelques secondes. La précision est passée d'environ un mètre dans les années 1970 à quelques millimètres aujourd'hui."
+   ],
+   [
+    "h",
+    "La faute aux marées"
+   ],
+   [
+    "p",
+    "Ces mesures ont montré que la Lune s'éloigne de nous d'environ 3,8 centimètres par an. La cause : les marées. La Lune déforme les océans de la Terre, et ce bourrelet d'eau, entraîné par la rotation de la Terre, tire légèrement la Lune vers l'avant et la fait monter sur une orbite plus large."
+   ],
+   [
+    "p",
+    "En échange, la rotation de la Terre ralentit : la journée s'allonge d'environ 1,6 milliseconde par siècle. C'est imperceptible pour nous, mais sur des centaines de millions d'années, cela change beaucoup la durée des jours."
+   ]
+  ],
+  "figs": [
+   [
+    "3,8 cm",
+    "d'éloignement chaque année"
+   ],
+   [
+    "≈ 385 000 km",
+    "de distance moyenne Terre-Lune"
+   ],
+   [
+    "1,6 ms",
+    "d'allongement du jour par siècle"
+   ]
+  ],
+  "keep": [
+   "La Lune s'éloigne de la Terre d'environ 3,8 cm par an.",
+   "On le mesure avec des lasers renvoyés par des réflecteurs posés sur la Lune depuis 1969.",
+   "Ce sont les marées qui éloignent la Lune et ralentissent la rotation de la Terre."
+  ],
+  "quiz": [
+   {
+    "q": "De combien la Lune s'éloigne-t-elle chaque année ?",
+    "o": [
+     "Environ 3,8 mm",
+     "Environ 3,8 cm",
+     "Environ 3,8 km"
+    ],
+    "a": 1,
+    "e": "Environ 3,8 centimètres par an : c'est imperceptible à l'échelle d'une vie."
+   },
+   {
+    "q": "Comment mesure-t-on la distance Terre-Lune aussi précisément ?",
+    "o": [
+     "Avec un très long ruban",
+     "Avec des tirs laser renvoyés par des réflecteurs posés sur la Lune",
+     "En calculant l'ombre de la Lune"
+    ],
+    "a": 1,
+    "e": "On chronomètre l'aller-retour de la lumière, renvoyée par des réflecteurs installés depuis 1969."
+   },
+   {
+    "q": "Quelle est la cause de l'éloignement de la Lune ?",
+    "o": [
+     "Les marées",
+     "Le vent solaire",
+     "Les météorites"
+    ],
+    "a": 0,
+    "e": "Les marées freinent la rotation de la Terre et transfèrent de l'énergie à la Lune, qui s'éloigne."
+   }
+  ],
+  "src": [
+   [
+    "Apollo 11 Experiment Continues to Return Valuable Data (NASA JPL)",
+    "https://www.jpl.nasa.gov/news/apollo-11-experiment-continues-to-return-valuable-data/"
+   ],
+   [
+    "1970 : première mesure de distance Terre-Lune (CNES)",
+    "https://cnes.fr/actualites/1970-premiere-mesure-de-distance-terrelune"
+   ],
+   [
+    "La Lune s'éloigne de la Terre (IMCCE, Observatoire de Paris)",
+    "https://promenade.imcce.fr/fr/pages6/696.html"
+   ]
+  ]
  }
 ]
